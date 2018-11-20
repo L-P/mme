@@ -4,6 +4,8 @@ import (
 	"flag"
 	"log"
 	"os"
+
+	"github.com/L-P/mme/rom"
 )
 
 func main() {
@@ -15,7 +17,7 @@ func main() {
 
 	romPath := flag.Args()[0]
 
-	_, err := NewROM(romPath)
+	_, err := rom.New(romPath)
 	if err != nil {
 		log.Fatal(err)
 	}

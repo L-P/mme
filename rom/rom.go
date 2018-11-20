@@ -1,4 +1,4 @@
-package main
+package rom
 
 import (
 	"bytes"
@@ -10,21 +10,33 @@ import (
 
 var bigEndianROMHeader = [4]byte{0x80, 0x37, 0x12, 0x40}
 
+const mmCRC1 = 0xDA6983E7
+const mmCRC2 = 0x50674458
+
 const romSize = 64 * 1024 * 1024
 
 // ROM represents a decompressed TLoZ:MM NTSC 1.0
+// Sources:
+//   - https://github.com/mupen64plus/mupen64plus-core/blob/master/src/api/m64p_types.h
 type ROM struct {
-	Header              [4]byte  // 0x000000-0x000003
-	_                   [4]byte  // 0x000004-0x000007
-	CodeRAMSegmentStart uint32   // 0x000008-0x00000B
-	_                   [20]byte // 0x00000C-0x00001F
-	Name                [20]byte // 0x000020-0x000033
+	Header         [4]byte   // 0x00
+	ClockRate      uint32    // 0x04
+	PC             uint32    // 0x08
+	Release        uint32    // 0x0C
+	CRC1           uint32    // 0x10
+	CRC2           uint32    // 0x14
+	_              [2]uint32 // 0x18
+	Name           [20]byte  // 0x20
+	_              uint32    // 0x34
+	ManufacturerID uint32    // 0x38
+	CartridgeID    uint16    // 0x3C - Game serial number
+	CountryCode    uint16    // 0x3E
 
-	_ [romSize - 0x34]byte
+	_ [romSize - 0x40]byte
 }
 
-// NewROM creates a new ROM from a file path
-func NewROM(path string) (*ROM, error) {
+// New loads a new ROM from a file path
+func New(path string) (*ROM, error) {
 	file, err := os.Open(path)
 	if err != nil {
 		return nil, fmt.Errorf("unable to open ROM: %s", err)
@@ -69,9 +81,15 @@ func (r *ROM) validate() error {
 			r.Header,
 		)
 	}
-
 	log.Printf("ROM is valid Nintendo®⁶⁴ big-endian ROM (z64) for %s", string(r.Name[:]))
-	log.Printf("Code RAM segment starts at 0x%04X", r.CodeRAMSegmentStart)
+
+	if r.CRC1 != mmCRC1 {
+		return fmt.Errorf("CRC1 does not match, expected %04X got 0x%04X", mmCRC1, r.CRC1)
+	}
+	if r.CRC2 != mmCRC2 {
+		return fmt.Errorf("CRC2 does not match, expected %04X got 0x%04X", mmCRC2, r.CRC2)
+	}
+	log.Printf("CRCs match MM NTSC 1.0")
 
 	return nil
 }
