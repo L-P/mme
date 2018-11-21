@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"unsafe"
 )
 
 var bigEndianROMHeader = [4]byte{0x80, 0x37, 0x12, 0x40}
@@ -32,7 +33,11 @@ type ROM struct {
 	CartridgeID    uint16    // 0x3C - Game serial number
 	CountryCode    uint16    // 0x3E
 
-	_ [romSize - 0x40]byte
+	_ [0x00C5A1E0 - 0x40]byte
+
+	InternalSceneTable [113]InternalSceneTableEntry // 00C5A1E0 - 00C5A8EF
+
+	_ [romSize - 0x00C5A8F0]byte
 }
 
 // New loads a new ROM from a file path
@@ -74,6 +79,15 @@ func (r *ROM) read() error {
 }
 
 func (r *ROM) validate() error {
+	size := unsafe.Sizeof(*r)
+	if size != romSize {
+		return fmt.Errorf(
+			"ROM struct size is %X, expected %X, this is either a programming error or the go compiler adding padding",
+			size,
+			romSize,
+		)
+	}
+
 	if !bytes.Equal(r.Header[:], bigEndianROMHeader[:]) {
 		return fmt.Errorf(
 			"invalid header, expected 0x%04X got 0x%04X, a valid decompressed big-endian (z64) ROM is required",
@@ -90,6 +104,12 @@ func (r *ROM) validate() error {
 		return fmt.Errorf("CRC2 does not match, expected %04X got 0x%04X", mmCRC2, r.CRC2)
 	}
 	log.Printf("CRCs match MM NTSC 1.0")
+
+	for k, v := range r.InternalSceneTable {
+		if err := v.validate(); err != nil {
+			return fmt.Errorf("IST entry #%d: %s", k, err)
+		}
+	}
 
 	return nil
 }
