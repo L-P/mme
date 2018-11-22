@@ -33,11 +33,26 @@ type ROM struct {
 	CartridgeID    uint16    // 0x3C - Game serial number
 	CountryCode    uint16    // 0x3E
 
-	_ [0x00C5A1E0 - 0x40]byte
+	_ [0x0001A500 - 0x40]byte
+
+	DMAData [1552]DMAEntry // 0x0001A500 - 0x0020600
+
+	_ [0x00C5A1E0 - 0x0020600]byte
 
 	InternalSceneTable [113]InternalSceneTableEntry // 0x00C5A1E0 - 0x00C5A8F0
 
 	_ [romSize - 0x00C5A8F0]byte
+}
+
+// DMAEntry is a single entry of the filesystem table
+type DMAEntry struct {
+	// Virtual (or physical when uncompressed)
+	VROMStart uint32
+	VROMEnd   uint32
+
+	// Physical (when compressed)
+	PROMStart uint32
+	PROMEnd   uint32
 }
 
 // New loads a new ROM from a file path
