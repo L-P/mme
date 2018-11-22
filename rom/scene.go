@@ -112,7 +112,7 @@ func (s *Scene) load(r io.ReadSeeker, start uint32, end uint32) {
 
 		if err := s.loadHeader(command, a, b); err != nil {
 			log.Printf(
-				"ERROR At offset 0x%08X (Scene at 0x%08X): %s",
+				"ERROR at offset 0x%08X (Scene at 0x%08X): %s",
 				s.DataStartOffset-8,
 				start,
 				err,
@@ -127,6 +127,8 @@ func (s *Scene) load(r io.ReadSeeker, start uint32, end uint32) {
 
 func (s *Scene) loadHeader(command byte, a uint32, b uint32) error {
 	switch command {
+	case 0x14:
+		return fmt.Errorf("loadHeader does not handle the header end command")
 	default:
 		return fmt.Errorf("unknown Scene header command 0x%02X (0x%08X 0x%08X)", command, a, b)
 	case 0x00:

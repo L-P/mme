@@ -50,17 +50,6 @@ type ROM struct {
 	_ [romSize - 0x00C5A8F0]byte
 }
 
-// DMAEntry is a single entry of the filesystem table
-type DMAEntry struct {
-	// Virtual (or physical when uncompressed)
-	VROMStart uint32
-	VROMEnd   uint32
-
-	// Physical (when compressed)
-	PROMStart uint32
-	PROMEnd   uint32
-}
-
 // New loads a new ROM from a file path
 func New(r io.ReadSeeker) (*ROM, error) {
 	rom := &ROM{}
@@ -124,12 +113,12 @@ func (r *ROM) validate() error {
 }
 
 // Returns team, date
-func parseBuild(build []byte) (string, time.Time) {
+func parseBuild(build []byte) (string, string) {
 	buildParts := strings.SplitN(
 		string(bytes.TrimRight(build, "\x00")),
 		"\x00",
 		2,
 	)
 	date, _ := time.Parse("06-01-02 15:04:05", buildParts[1])
-	return buildParts[0], date
+	return buildParts[0], date.Format("2006-01-02 15:04:05")
 }
