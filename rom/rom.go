@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"strings"
+	"time"
 	"unsafe"
 )
 
@@ -31,9 +33,13 @@ type ROM struct {
 	_              uint32    // 0x34
 	ManufacturerID uint32    // 0x38
 	CartridgeID    uint16    // 0x3C - Game serial number
-	CountryCode    uint16    // 0x3E
+	CountryCode    uint16    // 0x3E - 0x40
 
-	_ [0x0001A500 - 0x40]byte
+	_ [0x0001A4D0 - 0x40]byte
+
+	Build [32]byte // 0x0001A4D0 - 0x0001A4F0
+
+	_ [16]byte
 
 	DMAData [1552]DMAEntry // 0x0001A500 - 0x0020600
 
@@ -96,7 +102,6 @@ func (r *ROM) validate() error {
 			r.Header,
 		)
 	}
-	log.Printf("ROM is valid Nintendo®⁶⁴ big-endian ROM (z64) for %s", string(r.Name[:]))
 
 	if r.CRC1 != mmCRC1 {
 		return fmt.Errorf("CRC1 does not match, expected %04X got 0x%04X", mmCRC1, r.CRC1)
@@ -104,7 +109,10 @@ func (r *ROM) validate() error {
 	if r.CRC2 != mmCRC2 {
 		return fmt.Errorf("CRC2 does not match, expected %04X got 0x%04X", mmCRC2, r.CRC2)
 	}
-	log.Printf("CRCs match MM NTSC 1.0")
+
+	team, date := parseBuild(r.Build[:])
+	log.Printf("ROM is valid Nintendo®⁶⁴ big-endian ROM (z64) for %s", string(r.Name[:]))
+	log.Printf("Built by %s on %s", team, date)
 
 	for k, v := range r.InternalSceneTable {
 		if err := v.validate(); err != nil {
@@ -113,4 +121,15 @@ func (r *ROM) validate() error {
 	}
 
 	return nil
+}
+
+// Returns team, date
+func parseBuild(build []byte) (string, time.Time) {
+	buildParts := strings.SplitN(
+		string(bytes.TrimRight(build, "\x00")),
+		"\x00",
+		2,
+	)
+	date, _ := time.Parse("06-01-02 15:04:05", buildParts[1])
+	return buildParts[0], date
 }
