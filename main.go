@@ -17,7 +17,7 @@ func main() {
 
 	romPath := flag.Args()[0]
 
-	_, err := rom.New(romPath)
+	_, err := rom.NewView(romPath)
 	if err != nil {
 		log.Fatal(err)
 	}

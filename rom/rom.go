@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
+	"io"
 	"log"
-	"os"
 	"unsafe"
 )
 
@@ -35,31 +35,17 @@ type ROM struct {
 
 	_ [0x00C5A1E0 - 0x40]byte
 
-	InternalSceneTable [113]InternalSceneTableEntry // 00C5A1E0 - 00C5A8EF
+	InternalSceneTable [113]InternalSceneTableEntry // 0x00C5A1E0 - 0x00C5A8F0
 
 	_ [romSize - 0x00C5A8F0]byte
 }
 
 // New loads a new ROM from a file path
-func New(path string) (*ROM, error) {
-	file, err := os.Open(path)
-	if err != nil {
-		return nil, fmt.Errorf("unable to open ROM: %s", err)
-	}
-	defer file.Close()
-
-	stat, err := file.Stat()
-	if err != nil {
-		return nil, err
-	}
-
-	if stat.Size() != romSize {
-		return nil, fmt.Errorf("expected %d bytes of ROM data, got %d", romSize, stat.Size())
-	}
-
+func New(r io.ReadSeeker) (*ROM, error) {
 	rom := &ROM{}
 
-	if err := binary.Read(file, binary.BigEndian, rom); err != nil {
+	r.Seek(0, io.SeekStart)
+	if err := binary.Read(r, binary.BigEndian, rom); err != nil {
 		return nil, err
 	}
 
