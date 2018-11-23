@@ -75,7 +75,7 @@ type Scene struct {
 	CutscenesCount                            byte   // 0x17xx0000
 	CutscenesSegmentOffset                    uint32 // 0xyyyyyyyy
 	AlternateHeadersSegmentOffset             uint32 // 0x18000000 0xxxxxxxxx
-	WorldMapLocation                          bool   // 0x19000000 0x00000000 (presence = true)
+	IsWorldMapLocation                        bool   // 0x19000000 0x00000000 (presence = true)
 	TextureAnimationsSegmentOffset            uint32 // 0x1A000000 0xxxxxxxxx *
 	CamerasAndCutscenesForActorsCount         byte   // 0x1Bxx0000 *
 	CamerasAndCutscenesForActorsSegmentOffset uint32 // 0xyyyyyyyy
@@ -175,7 +175,7 @@ func (s *Scene) loadHeader(command byte, a uint32, b uint32) error {
 	case 0x18:
 		s.AlternateHeadersSegmentOffset = b
 	case 0x19:
-		s.WorldMapLocation = true
+		s.IsWorldMapLocation = true
 	case 0x1A:
 		s.TextureAnimationsSegmentOffset = b
 	case 0x1B:
