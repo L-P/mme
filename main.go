@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/L-P/mme/colormap"
 	"github.com/L-P/mme/rom"
+	"github.com/L-P/mme/server"
 )
 
 const colorMapPath = "out.png"
@@ -15,6 +15,7 @@ func main() {
 	flag.Parse()
 
 	if len(flag.Args()) != 1 {
+		log.Printf("Usage: mme ROM")
 		os.Exit(1)
 	}
 
@@ -26,9 +27,8 @@ func main() {
 	}
 	defer view.Close()
 
-	if err := colormap.Generate(colorMapPath, view); err != nil {
+	server := server.New(view)
+	if err := server.ListenAndServe(); err != nil {
 		log.Fatal(err)
 	}
-
-	log.Printf("Generated color map in %s", colorMapPath)
 }

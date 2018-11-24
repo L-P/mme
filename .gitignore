@@ -1,3 +1,6 @@
 /*.z64
+/front/node_modules
+/gin-bin
 /mme
 /out.*
+/static
