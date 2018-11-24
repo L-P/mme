@@ -20,6 +20,7 @@ type DMAEntry struct {
 type File struct {
 	DMAEntry
 
+	Name  string
 	Valid bool
 	data  []byte
 }
@@ -29,6 +30,7 @@ func (f *File) load(r io.ReadSeeker, entry DMAEntry) {
 		return
 	}
 
+	f.Name, _ = fileNames[entry.VROMStart]
 	f.Valid = true
 
 	f.DMAEntry = entry

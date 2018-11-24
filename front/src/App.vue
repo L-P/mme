@@ -40,6 +40,7 @@
            :class="{ 'navbar-menu': true, 'is-active': burgerOpen }"
           >
           <RouterLink class="navbar-item" to="/colormap">Color map</RouterLink>
+          <RouterLink class="navbar-item" to="/files">Files</RouterLink>
           <RouterLink class="navbar-item" to="/scenes">Scenes</RouterLink>
         </div>
       </div>

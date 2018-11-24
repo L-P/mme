@@ -44,6 +44,14 @@ func fill(img *image.NRGBA, v *rom.View) error {
 		}
 	}
 
+	for _, scene := range v.Scenes { // mark scenes as known
+		for i := scene.VROMStart; i < scene.VROMEnd; i += 4 {
+			img.Pix[i+0] = 0
+			img.Pix[i+1] = 255
+			img.Pix[i+2] = 0
+		}
+	}
+
 	// Mark dmadata as known
 	for i := 0x0001A500; i < 0x0020600; i += 4 {
 		img.Pix[i+0] = 0

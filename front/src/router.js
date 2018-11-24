@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import ColorMap from './views/ColorMap.vue';
 import Scenes from './views/Scenes.vue';
+import Files from './views/Files.vue';
 
 Vue.use(Router);
 
@@ -20,6 +21,10 @@ export default new Router({
     {
       path: '/scenes',
       component: Scenes,
+    },
+    {
+      path: '/files',
+      component: Files,
     },
   ],
 });
