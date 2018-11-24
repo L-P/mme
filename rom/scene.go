@@ -75,7 +75,7 @@ type Scene struct {
 	CutscenesCount                            byte   // 0x17xx0000
 	CutscenesSegmentOffset                    uint32 // 0xyyyyyyyy
 	AlternateHeadersSegmentOffset             uint32 // 0x18000000 0xxxxxxxxx
-	WorldMapLocation                          bool   // 0x19000000 0x00000000 (presence = true)
+	IsWorldMapLocation                        bool   // 0x19000000 0x00000000 (presence = true)
 	TextureAnimationsSegmentOffset            uint32 // 0x1A000000 0xxxxxxxxx *
 	CamerasAndCutscenesForActorsCount         byte   // 0x1Bxx0000 *
 	CamerasAndCutscenesForActorsSegmentOffset uint32 // 0xyyyyyyyy
@@ -112,7 +112,7 @@ func (s *Scene) load(r io.ReadSeeker, start uint32, end uint32) {
 
 		if err := s.loadHeader(command, a, b); err != nil {
 			log.Printf(
-				"At offset 0x%08X (Scene at 0x%08X): %s",
+				"ERROR at offset 0x%08X (Scene at 0x%08X): %s",
 				s.DataStartOffset-8,
 				start,
 				err,
@@ -127,8 +127,10 @@ func (s *Scene) load(r io.ReadSeeker, start uint32, end uint32) {
 
 func (s *Scene) loadHeader(command byte, a uint32, b uint32) error {
 	switch command {
+	case 0x14:
+		return fmt.Errorf("loadHeader does not handle the header end command")
 	default:
-		return fmt.Errorf("Unknown Scene header command 0x%02X (0x%08X 0x%08X)", command, a, b)
+		return fmt.Errorf("unknown Scene header command 0x%02X (0x%08X 0x%08X)", command, a, b)
 	case 0x00:
 		s.StartPositionsCount = byte((a & 0x00FF0000) >> 16)
 		s.StartPositionsSegmentOffset = b
@@ -173,7 +175,7 @@ func (s *Scene) loadHeader(command byte, a uint32, b uint32) error {
 	case 0x18:
 		s.AlternateHeadersSegmentOffset = b
 	case 0x19:
-		s.WorldMapLocation = true
+		s.IsWorldMapLocation = true
 	case 0x1A:
 		s.TextureAnimationsSegmentOffset = b
 	case 0x1B:
