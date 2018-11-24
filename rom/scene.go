@@ -83,6 +83,7 @@ type Scene struct {
 	ChestPositionsCount                       byte   // 0x1Exx0000
 	ChestPositionsSegmentOffset               uint32 // 0xyyyyyyyy
 
+	InternalSceneTableEntry
 	Valid           bool  // Is the scene valid (has data)
 	DataStartOffset int64 // ROM offset the scene data
 	data            []byte
@@ -90,14 +91,15 @@ type Scene struct {
 
 var sceneHeaderEndCommand byte = 0x14
 
-func (s *Scene) load(r io.ReadSeeker, start uint32, end uint32) {
-	if start == 0 && end == 0 {
+func (s *Scene) load(r io.ReadSeeker, entry InternalSceneTableEntry) {
+	s.InternalSceneTableEntry = entry
+	if entry.VROMStart == 0 && entry.VROMEnd == 0 {
 		return
 	}
 	s.Valid = true
 
-	r.Seek(int64(start), io.SeekStart)
-	s.DataStartOffset = int64(start)
+	r.Seek(int64(entry.VROMStart), io.SeekStart)
+	s.DataStartOffset = int64(entry.VROMStart)
 
 	var a, b uint32
 	for {
@@ -114,13 +116,13 @@ func (s *Scene) load(r io.ReadSeeker, start uint32, end uint32) {
 			log.Printf(
 				"ERROR at offset 0x%08X (Scene at 0x%08X): %s",
 				s.DataStartOffset-8,
-				start,
+				entry.VROMStart,
 				err,
 			)
 		}
 	}
 
-	size := int64(end) - s.DataStartOffset
+	size := int64(entry.VROMEnd) - s.DataStartOffset
 	s.data = make([]byte, size, size)
 	binary.Read(r, binary.BigEndian, s.data)
 }

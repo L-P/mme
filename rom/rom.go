@@ -16,7 +16,8 @@ var bigEndianROMHeader = [4]byte{0x80, 0x37, 0x12, 0x40}
 const mmCRC1 = 0xDA6983E7
 const mmCRC2 = 0x50674458
 
-const romSize = 64 * 1024 * 1024
+// Size is the total byte size of a ROM
+const Size = 64 * 1024 * 1024
 
 // ROM represents a decompressed TLoZ:MM NTSC 1.0
 // Sources:
@@ -47,7 +48,7 @@ type ROM struct {
 
 	InternalSceneTable [113]InternalSceneTableEntry // 0x00C5A1E0 - 0x00C5A8F0
 
-	_ [romSize - 0x00C5A8F0]byte
+	_ [Size - 0x00C5A8F0]byte
 }
 
 // New loads a new ROM from a file path
@@ -76,11 +77,11 @@ func (r *ROM) read() error {
 
 func (r *ROM) validate() error {
 	size := unsafe.Sizeof(*r)
-	if size != romSize {
+	if size != Size {
 		return fmt.Errorf(
 			"ROM struct size is %X, expected %X, this is either a programming error or the go compiler adding padding",
 			size,
-			romSize,
+			Size,
 		)
 	}
 
