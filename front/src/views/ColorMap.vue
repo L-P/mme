@@ -10,7 +10,7 @@ import Vue from 'vue';
 export default {
   data() {
     return {
-      colormap: 'http://localhost:3000/api/colormap',
+      colormap: 'http://localhost:8064/api/colormap',
     }
   }
 }
