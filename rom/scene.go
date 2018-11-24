@@ -14,21 +14,9 @@ type InternalSceneTableEntry struct {
 	VROMStart          uint32
 	VROMEnd            uint32
 	EntranceMessageID  uint16
-	Padding0           uint8
+	_                  uint8
 	SceneConfiguration uint8
-	Padding1           uint32
-}
-
-func (e *InternalSceneTableEntry) validate() error {
-	if e.Padding0 != 0 {
-		return fmt.Errorf("Padding0 is not 0: %X", e.Padding0)
-	}
-
-	if e.Padding1 != 0 {
-		return fmt.Errorf("Padding1 is not 0: %X", e.Padding1)
-	}
-
-	return nil
+	_                  uint32
 }
 
 // Scene holds a Scene headers and contents. A Scene contents size depends on
@@ -84,6 +72,8 @@ type Scene struct {
 	ChestPositionsSegmentOffset               uint32 // 0xyyyyyyyy
 
 	InternalSceneTableEntry
+
+	Name            string
 	Valid           bool  // Is the scene valid (has data)
 	DataStartOffset int64 // ROM offset the scene data
 	data            []byte

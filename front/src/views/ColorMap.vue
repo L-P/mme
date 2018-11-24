@@ -1,17 +1,7 @@
 <template>
   <div class="container">
-    <img :src="colormap" />
+    <a href="http://localhost:8064/api/colormap">
+      <img src="http://localhost:8064/api/colormap" />
+    </a>
   </div>
 </template>
-
-<script>
-import Vue from 'vue';
-
-export default {
-  data() {
-    return {
-      colormap: 'http://localhost:8064/api/colormap',
-    }
-  }
-}
-</script>

@@ -104,12 +104,6 @@ func (r *ROM) validate() error {
 	log.Printf("ROM is valid Nintendo®⁶⁴ big-endian ROM (z64) for %s", string(r.Name[:]))
 	log.Printf("Built by %s on %s", team, date)
 
-	for k, v := range r.InternalSceneTable {
-		if err := v.validate(); err != nil {
-			return fmt.Errorf("IST entry #%d: %s", k, err)
-		}
-	}
-
 	return nil
 }
 
