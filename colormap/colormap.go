@@ -7,7 +7,6 @@ import (
 	"image/png"
 	"io"
 	"log"
-	"os"
 
 	"github.com/L-P/mme/rom"
 )
@@ -18,14 +17,7 @@ const side = 4096 // sqrt(64 MiB) = 4096² 4-byte words, 1 pixel per uint32
 // Magenta is unknown/unmapped data
 // Blue is files
 // Half-values (eg. dark blue) is zeroes
-func Generate(path string, v *rom.View) error {
-
-	fd, err := os.OpenFile("out.png", os.O_RDWR|os.O_CREATE, 0644)
-	if err != nil {
-		return err
-	}
-	defer fd.Close()
-
+func Generate(w io.Writer, v *rom.View) error {
 	img := image.NewNRGBA(image.Rect(0, 0, side, side))
 	log.Print("Generating color map…")
 	if err := fill(img, v); err != nil {
@@ -34,7 +26,7 @@ func Generate(path string, v *rom.View) error {
 
 	log.Print("Compressing color map…")
 	enc := png.Encoder{CompressionLevel: png.BestSpeed}
-	return enc.Encode(fd, img)
+	return enc.Encode(w, img)
 }
 
 func fill(img *image.NRGBA, v *rom.View) error {
