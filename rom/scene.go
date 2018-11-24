@@ -75,6 +75,7 @@ type Scene struct {
 	InternalSceneTableEntry
 
 	Name            string
+	EntranceMessage string
 	Valid           bool  // Is the scene valid (has data)
 	DataStartOffset int64 // ROM offset the scene data
 	data            []byte

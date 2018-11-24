@@ -56,16 +56,6 @@ type ROM struct {
 	_ [Size - 0x00C66040]byte
 }
 
-// MessageEntry is a single entry in the message table
-// Sources:
-// - https://wiki.cloudmodding.com/mm/Text_Format#Message_Entry_Table
-// binpacked, do not change struct size
-type MessageEntry struct {
-	Number uint16
-	_      uint16 // 0x0000
-	Offset uint32 // prefixed with 0x08
-}
-
 // New loads a new ROM from a file path
 func New(r io.ReadSeeker) (*ROM, error) {
 	rom := &ROM{}

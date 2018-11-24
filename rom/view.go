@@ -78,7 +78,20 @@ func (v *View) load(r io.ReadSeeker) error {
 		return err
 	}
 
+	v.mapSceneEntranceMessages()
+
 	return nil
+}
+
+// O(n²) deal with it
+func (v *View) mapSceneEntranceMessages() {
+	for k := range v.Scenes {
+		for _, msg := range v.Messages {
+			if v.Scenes[k].EntranceMessageID == msg.ID {
+				v.Scenes[k].EntranceMessage = msg.String
+			}
+		}
+	}
 }
 
 func (v *View) loadFiles(r io.ReadSeeker) error {

@@ -3,7 +3,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th>Number</th>
+          <th>ID</th>
           <th>Offset</th>
           <th>VROMStart</th>
           <th>String</th>
@@ -12,7 +12,7 @@
 
       <tbody>
           <tr v-for="message in messages">
-            <td>{{ message.Number | hex(4) }}</td>
+            <td>{{ message.ID | hex(4) }}</td>
             <td>{{ message.Offset | hex(8) }}</td>
             <td>{{ message.VROMStart | hex(8) }}</td>
             <td style="white-space: pre;">{{ message.String }}</td>
