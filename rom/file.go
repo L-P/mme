@@ -31,7 +31,7 @@ func (f *File) load(r io.ReadSeeker, entry DMAEntry) {
 		return
 	}
 
-	f.Name, _ = fileNames[entry.VROMStart]
+	f.Name, _ = FileNames[entry.VROMStart]
 	f.Valid = true
 
 	f.DMAEntry = entry

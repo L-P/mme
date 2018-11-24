@@ -12,8 +12,9 @@ import (
 
 // A View holds a ROM real data and accessors for dynamically placed data.
 type View struct {
-	Files  []File
-	Scenes []Scene
+	Files    []File
+	Scenes   []Scene
+	Messages []Message
 
 	rom *ROM
 	fd  *os.File
@@ -44,10 +45,11 @@ func NewView(path string) (*View, error) {
 	}
 
 	v := &View{
-		rom:    rom,
-		Scenes: make([]Scene, len(rom.InternalSceneTable), len(rom.InternalSceneTable)),
-		Files:  make([]File, len(rom.DMAData), len(rom.DMAData)),
-		fd:     fd,
+		rom:      rom,
+		Scenes:   make([]Scene, len(rom.InternalSceneTable), len(rom.InternalSceneTable)),
+		Files:    make([]File, len(rom.DMAData), len(rom.DMAData)),
+		Messages: make([]Message, len(rom.MessageTable), len(rom.MessageTable)),
+		fd:       fd,
 	}
 
 	if err := v.load(fd); err != nil {
@@ -69,6 +71,10 @@ func (v *View) load(r io.ReadSeeker) error {
 	}
 
 	if err := v.loadScenes(r); err != nil {
+		return err
+	}
+
+	if err := v.loadMessages(r); err != nil {
 		return err
 	}
 
@@ -101,6 +107,20 @@ func (v *View) loadScenes(r io.ReadSeeker) error {
 	}
 
 	log.Printf("Loaded %d Scenes", len(v.Scenes))
+
+	return nil
+}
+
+func (v *View) loadMessages(r io.ReadSeeker) error {
+	if len(v.Messages) != len(v.rom.MessageTable) {
+		return errors.New("len(v.scenes) != len (v.rom.MessageTable")
+	}
+
+	for k, entry := range v.rom.MessageTable {
+		v.Messages[k].load(r, entry)
+	}
+
+	log.Printf("Loaded %d Messages", len(v.Messages))
 
 	return nil
 }

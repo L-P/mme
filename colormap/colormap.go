@@ -36,19 +36,20 @@ func fill(img *image.NRGBA, v *rom.View) error {
 		img.Pix[i+3] = 255 // A, set only once
 	}
 
-	for _, file := range v.Files { // blue for unknown files
+	for _, file := range v.Files {
 		for i := file.VROMStart; i < file.VROMEnd; i += 4 {
-			img.Pix[i+0] = 0
-			img.Pix[i+1] = 0
-			img.Pix[i+2] = 255
-		}
-	}
-
-	for _, scene := range v.Scenes { // mark scenes as known
-		for i := scene.VROMStart; i < scene.VROMEnd; i += 4 {
-			img.Pix[i+0] = 0
-			img.Pix[i+1] = 255
-			img.Pix[i+2] = 0
+			_, found := rom.FileNames[file.VROMStart]
+			if found {
+				// green for unknown files
+				img.Pix[i+0] = 0
+				img.Pix[i+1] = 255
+				img.Pix[i+2] = 0
+			} else {
+				// blue for unknown files
+				img.Pix[i+0] = 0
+				img.Pix[i+1] = 0
+				img.Pix[i+2] = 255
+			}
 		}
 	}
 

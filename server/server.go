@@ -53,6 +53,7 @@ func (s *Server) setupRoutes() {
 	http.HandleFunc("/api/colormap", s.colormapHandler())
 	http.HandleFunc("/api/scenes", s.addCORS(s.scenesHandler))
 	http.HandleFunc("/api/files", s.addCORS(s.filesHandler))
+	http.HandleFunc("/api/messages", s.addCORS(s.messagesHandler))
 }
 
 // Catch-all to index to allow for Vue URIs
@@ -108,4 +109,10 @@ func (s *Server) filesHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	enc := json.NewEncoder(w)
 	enc.Encode(s.rom.Files)
+}
+
+func (s *Server) messagesHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Add("Content-Type", "application/json")
+	enc := json.NewEncoder(w)
+	enc.Encode(s.rom.Messages)
 }

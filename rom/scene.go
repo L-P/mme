@@ -89,7 +89,7 @@ func (s *Scene) load(r io.ReadSeeker, entry InternalSceneTableEntry) {
 	}
 
 	s.Valid = true
-	s.Name = fileNames[entry.VROMStart]
+	s.Name = FileNames[entry.VROMStart]
 
 	r.Seek(int64(entry.VROMStart), io.SeekStart)
 	s.DataStartOffset = int64(entry.VROMStart)

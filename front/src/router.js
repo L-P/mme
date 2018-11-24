@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import ColorMap from './views/ColorMap.vue';
 import Scenes from './views/Scenes.vue';
 import Files from './views/Files.vue';
+import Messages from './views/Messages.vue';
 
 Vue.use(Router);
 
@@ -25,6 +26,10 @@ export default new Router({
     {
       path: '/files',
       component: Files,
+    },
+    {
+      path: '/messages',
+      component: Messages,
     },
   ],
 });

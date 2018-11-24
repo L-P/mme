@@ -1,6 +1,7 @@
 package rom
 
-var fileNames = map[uint32]string{
+// FileNames maps file start offset to a file name
+var FileNames = map[uint32]string{
 	0x00000000: "",
 	0x01F0D000: "Z2_20SICHITAI2",
 	0x02E95000: "KAKUSIANA",
@@ -104,4 +105,6 @@ var fileNames = map[uint32]string{
 	0x02E1D000: "Z2_BACKTOWN",
 	0x02E39000: "Z2_CLOCKTOWER",
 	0x02E70000: "Z2_ALLEY",
+
+	0x00AD1000: "nes_message_data_static",
 }
