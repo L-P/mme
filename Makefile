@@ -4,4 +4,7 @@ all: $(EXEC)
 $(EXEC):
 	go build
 
-.PHONY: $(EXEC)
+.PHONY: $(EXEC) run
+
+run:
+	gin --immediate rom.z64
