@@ -6,6 +6,7 @@ import (
 )
 
 // DMAEntry is a single entry of the filesystem table
+// binpacked, do not change struct size
 type DMAEntry struct {
 	// Virtual (or physical when uncompressed)
 	VROMStart uint32

@@ -10,6 +10,7 @@ import (
 // InternalSceneTableEntry is a single entry of the InternalSceneTable
 // Sources:
 // - https://wiki.cloudmodding.com/mm/Scene_Table
+// binpacked, do not change struct size
 type InternalSceneTableEntry struct {
 	VROMStart          uint32
 	VROMEnd            uint32

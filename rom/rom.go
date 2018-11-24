@@ -22,6 +22,7 @@ const Size = 64 * 1024 * 1024
 // ROM represents a decompressed TLoZ:MM NTSC 1.0
 // Sources:
 //   - https://github.com/mupen64plus/mupen64plus-core/blob/master/src/api/m64p_types.h
+// binpacked, do not change struct size
 type ROM struct {
 	Header         [4]byte   // 0x00
 	ClockRate      uint32    // 0x04
