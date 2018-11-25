@@ -23,9 +23,7 @@
           <td>{{ file.VROMEnd | hex(8) }}</td>
           <td>{{ file.VROMEnd - file.VROMStart | humanizeBytes }}</td>
           <td>
-            <a :href="'/api/files/' + file.VROMStart | apiURI">
-              DL
-            </a>
+            <a class="button" :href="'/api/files/' + file.VROMStart | apiURI">Download</a>
           </td>
         </tr>
       </tbody>

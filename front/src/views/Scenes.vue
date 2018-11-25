@@ -8,7 +8,7 @@
           <th>VROMStart</th>
           <th>VROMEnd</th>
           <th>Data size</th>
-          <th colspan="2">Actions</th>
+          <th>Actions</th>
         </tr>
       </thead>
 
@@ -24,9 +24,7 @@
           <td>{{ scene.VROMEnd - scene.VROMStart | humanizeBytes }}</td>
           <td>
             <a class="button" :href="'/api/files/' + scene.VROMStart | apiURI">Download</a>
-          </td>
-          <td>
-
+            &nbsp;
             <RouterLink
               class="button is-primary"
               :to="{name: 'SceneDetail', params: {start: scene.VROMStart}}"
