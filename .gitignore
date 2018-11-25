@@ -1,4 +1,6 @@
+/*.tgz
 /*.z64
+/*.zip
 /front/node_modules
 /gin-bin
 /mme

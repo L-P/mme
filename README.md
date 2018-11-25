@@ -1,5 +1,11 @@
 # mme - Majora's Mask Explorer
 
+## Usage
+```
+./mme ROM
+# Open http://localhost:8064 in your favorite web browser.
+```
+
 ## Development
 A file named `rom.z64` is required at the repository root.
 
