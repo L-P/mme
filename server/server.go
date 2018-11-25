@@ -62,8 +62,11 @@ func (s *Server) setupRoutes() {
 
 	s.router.Get("/api/rom", s.romHandler)
 	s.router.Get("/api/colormap", s.colormapHandler())
-	s.router.Get("/api/scenes", s.scenesHandler)
 	s.router.Get("/api/messages", s.messagesHandler)
+
+	s.router.Get("/api/scenes/:start", s.sceneDetailHandler)
+	s.router.Get("/api/scenes", s.scenesHandler)
+
 	s.router.Get("/api/files/:start", s.fileDataHandler)
 	s.router.Get("/api/files", s.filesHandler)
 
@@ -167,4 +170,23 @@ func (s *Server) romHandler(w http.ResponseWriter, r *http.Request) {
 		"Build team": team,
 		"Build date": date,
 	})
+}
+
+func (s *Server) sceneDetailHandler(w http.ResponseWriter, r *http.Request) {
+	start, err := strconv.ParseInt(vestigo.Param(r, "start"), 10, 32)
+	if err != nil {
+		log.Print(err)
+		return
+	}
+
+	scene, err := s.rom.GetSceneByVROMStart(uint32(start))
+	if err != nil {
+		log.Print(err)
+		return
+	}
+
+	w.Header().Add("Content-Type", "application/json")
+	enc := json.NewEncoder(w)
+
+	enc.Encode(scene)
 }

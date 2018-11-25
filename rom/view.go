@@ -157,6 +157,16 @@ func (v *View) GetFileByVROMStart(start uint32) (*File, error) {
 	return nil, errors.New("file not found")
 }
 
+// GetSceneByVROMStart returns a Scene from a VROMStart
+func (v *View) GetSceneByVROMStart(start uint32) (*Scene, error) {
+	for k := range v.Scenes {
+		if v.Scenes[k].VROMStart == start {
+			return &v.Scenes[k], nil
+		}
+	}
+	return nil, errors.New("scene not found")
+}
+
 // GetROM returns the raw ROM struct
 func (v *View) GetROM() *ROM {
 	return v.rom
