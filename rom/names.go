@@ -2,7 +2,13 @@ package rom
 
 // FileNames maps file start offset to a file name
 var FileNames = map[uint32]string{
-	0x00000000: "",
+	0x00000000: "makerom",
+	0x00001060: "boot",
+	0x0001A500: "dmadata",
+	0x00AD1000: "nes_message_data_static",
+	// 0x00DC5A10: "", // TODO contains internal scene table",
+
+	// Scenes
 	0x01F0D000: "Z2_20SICHITAI2",
 	0x02E95000: "KAKUSIANA",
 	0x02E87000: "SPOT00",
@@ -106,8 +112,7 @@ var FileNames = map[uint32]string{
 	0x02E39000: "Z2_CLOCKTOWER",
 	0x02E70000: "Z2_ALLEY",
 
-	0x00AD1000: "nes_message_data_static",
-
+	// Rooms
 	0x01F1E000: "Z2_20SICHITAI2 - room #00",
 	0x01F39240: "Z2_20SICHITAI2 - room #01",
 	0x01F3A000: "Z2_20SICHITAI2 - room #02",
