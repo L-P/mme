@@ -1,9 +1,12 @@
 VERSION=$(shell git describe --tags)
 BUILDFLAGS=-ldflags '-X main.Version=${VERSION}'
 EXEC=$(shell basename "$(shell pwd)")
-all: $(EXEC)
 
-$(EXEC):
+all:
+
+.PHONY: $(EXEC) run clean release
+
+release:
 	cd front && yarn build --mode=production
 	mkdir -p "release/$(VERSION)"
 	env GOOS=linux GOARCH=amd64 packr build ${BUILDFLAGS} -o "mme_$(VERSION)/mme"
@@ -12,8 +15,6 @@ $(EXEC):
 	tar czf "mme_$(VERSION).tgz" "mme_$(VERSION)"
 	zip -r "mme_$(VERSION).zip" "mme_$(VERSION)"
 	rm -rf "release" "mme_$(VERSION)"
-
-.PHONY: $(EXEC) run clean
 
 clean:
 	rm -rf front/dist gin-bin mme release

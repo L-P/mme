@@ -1,10 +1,11 @@
 # mme - Majora's Mask Explorer
+![logo](front/public/assets/mme.svg)
 
 ## Usage
-```
-./mme ROM
-# Open http://localhost:8064 in your favorite web browser.
-```
+1. `./mme ROM`
+2. http://localhost:8064
+
+URIs and ports are hardcoded for now.
 
 ## Development
 A file named `rom.z64` is required at the repository root.
@@ -14,8 +15,4 @@ A file named `rom.z64` is required at the repository root.
 3. Open your browser to http://localhost:8080
 
 ## Production
-1. `make`
-2. `./mme ROM`
-3. Open your browser to http://localhost:8064
-
-URIs and ports are hardcoded for now.
+1. `make release`
