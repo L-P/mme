@@ -7,21 +7,28 @@
           <th>EntranceMessage</th>
           <th>VROMStart</th>
           <th>VROMEnd</th>
-          <th>EntranceMessageID</th>
+          <th>Data size</th>
+          <th>Actions</th>
         </tr>
       </thead>
 
       <tbody>
-          <tr v-for="scene in scenes">
-            <td>{{ scene.Name }}</td>
-            <td>{{ scene.EntranceMessage }}</td>
-            <td>{{ scene.VROMStart | hex(8) }}</td>
-            <td>{{ scene.VROMEnd | hex(8) }}</td>
-            <td>{{ scene.EntranceMessageID | hex(4) }}</td>
-          </tr>
-        </v-for>
+        <tr
+          v-for="scene, _, index in scenes"
+          :key="index"
+        >
+          <td>{{ scene.Name }}</td>
+          <td>{{ scene.EntranceMessage }}</td>
+          <td>{{ scene.VROMStart | hex(8) }}</td>
+          <td>{{ scene.VROMEnd | hex(8) }}</td>
+          <td>{{ scene.VROMEnd - scene.VROMStart | humanizeBytes }}</td>
+          <td>
+            <a :href="'/api/files/' + scene.VROMStart | apiURI">
+              DL
+            </a>
+          </td>
+        </tr>
       </tbody>
-
     </table>
   </div>
 </template>

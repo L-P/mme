@@ -26,6 +26,16 @@ type File struct {
 	data  []byte
 }
 
+// Data returns the RAW file data
+func (f *File) Data() []byte {
+	return f.data
+}
+
+// Size returns the raw file data size
+func (f *File) Size() int {
+	return len(f.data)
+}
+
 func (f *File) load(r io.ReadSeeker, entry DMAEntry) {
 	if entry.PROMStart == 0xFFFFFFFF || entry.PROMEnd == 0xFFFFFFFF {
 		return

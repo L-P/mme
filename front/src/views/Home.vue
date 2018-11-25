@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="center">
-      <img src="assets/mme.svg" />
+      <img src="assets/mme.svg">
     </div>
   </div>
 </template>

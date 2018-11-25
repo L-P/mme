@@ -11,15 +11,18 @@
       </thead>
 
       <tbody>
-          <tr v-for="message in messages">
-            <td>{{ message.ID | hex(4) }}</td>
-            <td>{{ message.Offset | hex(8) }}</td>
-            <td>{{ message.VROMStart | hex(8) }}</td>
-            <td style="white-space: pre;">{{ message.String }}</td>
-          </tr>
-        </v-for>
+        <tr
+          v-for="message in messages"
+          :key="message.ID"
+        >
+          <td>{{ message.ID | hex(4) }}</td>
+          <td>{{ message.Offset | hex(8) }}</td>
+          <td>{{ message.VROMStart | hex(8) }}</td>
+          <td style="white-space: pre;">
+            {{ message.String }}
+          </td>
+        </tr>
       </tbody>
-
     </table>
   </div>
 </template>

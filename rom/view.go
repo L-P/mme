@@ -146,3 +146,13 @@ func (v *View) Read(p []byte) (n int, err error) {
 func (v *View) Seek(offset int64, whence int) (int64, error) {
 	return v.fd.Seek(offset, whence)
 }
+
+// GetFileByVROMStart returns a File from a VROMStart
+func (v *View) GetFileByVROMStart(start uint32) (*File, error) {
+	for k := range v.Files {
+		if v.Files[k].VROMStart == start {
+			return &v.Files[k], nil
+		}
+	}
+	return nil, errors.New("file not found")
+}

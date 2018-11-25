@@ -3,13 +3,16 @@ package server
 import (
 	"bytes"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
+	"strconv"
 	"time"
 
 	"github.com/L-P/mme/colormap"
 	"github.com/L-P/mme/rom"
 	"github.com/gobuffalo/packr"
+	"github.com/husobee/vestigo"
 )
 
 // Server serves ROM info over HTTP.
@@ -17,10 +20,13 @@ type Server struct {
 	httpServer *http.Server
 	rom        *rom.View
 	static     packr.Box
+	router     *vestigo.Router
 }
 
 // New creates a new Server
 func New(view *rom.View) *Server {
+	router := vestigo.NewRouter()
+
 	s := &Server{
 		rom: view,
 		httpServer: &http.Server{
@@ -28,8 +34,10 @@ func New(view *rom.View) *Server {
 			ReadTimeout:  5 * time.Second,
 			WriteTimeout: 10 * time.Second,
 			IdleTimeout:  15 * time.Second,
+			Handler:      router,
 		},
 		static: packr.NewBox("../front/dist"),
+		router: router,
 	}
 
 	s.setupRoutes()
@@ -44,21 +52,35 @@ func (s *Server) ListenAndServe() error {
 }
 
 func (s *Server) setupRoutes() {
-	// Static and generated files
-	http.HandleFunc("/", s.indexHandler)
-	http.HandleFunc("/favicon.ico", s.faviconHandler)
-	http.Handle("/assets/", s.addCacheHeaders(http.FileServer(s.static)))
-	http.Handle("/_/", s.addCacheHeaders(http.FileServer(s.static)))
+	s.router.SetGlobalCors(&vestigo.CorsAccessControl{
+		AllowOrigin: []string{
+			"http://localhost:3000",
+			"http://localhost:8064",
+			"http://localhost:8080",
+		},
+	})
 
-	http.HandleFunc("/api/colormap", s.colormapHandler())
-	http.HandleFunc("/api/scenes", s.addCORS(s.scenesHandler))
-	http.HandleFunc("/api/files", s.addCORS(s.filesHandler))
-	http.HandleFunc("/api/messages", s.addCORS(s.messagesHandler))
+	s.router.Get("/api/colormap", s.colormapHandler())
+	s.router.Get("/api/scenes", s.scenesHandler)
+	s.router.Get("/api/messages", s.messagesHandler)
+	s.router.Get("/api/files/:start", s.fileDataHandler)
+	s.router.Get("/api/files", s.filesHandler)
+
+	// Static and generated files
+	s.router.Get("/", s.indexHandler)
+	s.router.Get("/:route", s.indexHandler)
+	s.router.Get("/favicon.ico", s.faviconHandler)
+	s.router.Handle("/assets/:file", s.handleStatic())
+	s.router.Handle("/_/:file", s.handleStatic())
+	s.router.Handle("/_/:type/:file", s.handleStatic())
+}
+
+func (s *Server) handleStatic() http.Handler {
+	return s.addCacheHeaders(http.FileServer(s.static))
 }
 
 // Catch-all to index to allow for Vue URIs
 func (s *Server) indexHandler(w http.ResponseWriter, r *http.Request) {
-	w.Header().Add("Access-Control-Allow-Origin", "*")
 	b, _ := s.static.Find("index.html")
 	w.Write(b)
 }
@@ -92,13 +114,6 @@ func (s *Server) addCacheHeaders(h http.Handler) http.HandlerFunc {
 	}
 }
 
-func (s *Server) addCORS(f http.HandlerFunc) http.HandlerFunc {
-	return func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Add("Access-Control-Allow-Origin", "http://localhost:8080")
-		f(w, r)
-	}
-}
-
 func (s *Server) scenesHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	enc := json.NewEncoder(w)
@@ -109,6 +124,26 @@ func (s *Server) filesHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	enc := json.NewEncoder(w)
 	enc.Encode(s.rom.Files)
+}
+
+func (s *Server) fileDataHandler(w http.ResponseWriter, r *http.Request) {
+	start := vestigo.Param(r, "start")
+	i, err := strconv.ParseInt(start, 10, 32)
+	if err != nil {
+		log.Print(err)
+		return
+	}
+
+	file, err := s.rom.GetFileByVROMStart(uint32(i))
+	if err != nil {
+		log.Print(err)
+		return
+	}
+
+	w.Header().Add("Content-Length", fmt.Sprintf("%d", file.Size()))
+	w.Header().Add("Content-Type", "application/octet-stream")
+	w.Header().Add("Content-Disposition", "attachment")
+	w.Write(file.Data())
 }
 
 func (s *Server) messagesHandler(w http.ResponseWriter, r *http.Request) {
