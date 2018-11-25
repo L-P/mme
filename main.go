@@ -11,7 +11,11 @@ import (
 
 const colorMapPath = "out.png"
 
+// Version holds the source tag mme was built from.
+var Version = "unknown version"
+
 func main() {
+	log.Printf("Majora's Mask Explorer %s", Version)
 	flag.Parse()
 
 	if len(flag.Args()) != 1 {
