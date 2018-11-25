@@ -156,3 +156,8 @@ func (v *View) GetFileByVROMStart(start uint32) (*File, error) {
 	}
 	return nil, errors.New("file not found")
 }
+
+// GetROM returns the raw ROM struct
+func (v *View) GetROM() *ROM {
+	return v.rom
+}

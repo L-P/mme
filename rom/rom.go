@@ -69,15 +69,7 @@ func New(r io.ReadSeeker) (*ROM, error) {
 		return nil, err
 	}
 
-	if err := rom.read(); err != nil {
-		return nil, nil
-	}
-
 	return rom, nil
-}
-
-func (r *ROM) read() error {
-	return nil
 }
 
 func (r *ROM) validate() error {
@@ -105,17 +97,17 @@ func (r *ROM) validate() error {
 		return fmt.Errorf("CRC2 does not match, expected %04X got 0x%04X", mmCRC2, r.CRC2)
 	}
 
-	team, date := parseBuild(r.Build[:])
+	team, date := r.ParseBuild()
 	log.Printf("ROM is valid Nintendo®⁶⁴ big-endian ROM (z64) for %s", string(r.Name[:]))
 	log.Printf("Built by %s on %s", team, date)
 
 	return nil
 }
 
-// Returns team, date
-func parseBuild(build []byte) (string, string) {
+// ParseBuild returns team, date
+func (r *ROM) ParseBuild() (string, string) {
 	buildParts := strings.SplitN(
-		string(bytes.TrimRight(build, "\x00")),
+		string(bytes.TrimRight(r.Build[:], "\x00")),
 		"\x00",
 		2,
 	)

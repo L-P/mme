@@ -60,6 +60,7 @@ func (s *Server) setupRoutes() {
 		},
 	})
 
+	s.router.Get("/api/rom", s.romHandler)
 	s.router.Get("/api/colormap", s.colormapHandler())
 	s.router.Get("/api/scenes", s.scenesHandler)
 	s.router.Get("/api/messages", s.messagesHandler)
@@ -150,4 +151,20 @@ func (s *Server) messagesHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	enc := json.NewEncoder(w)
 	enc.Encode(s.rom.Messages)
+}
+
+func (s *Server) romHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Add("Content-Type", "application/json")
+	enc := json.NewEncoder(w)
+
+	rom := s.rom.GetROM()
+	team, date := rom.ParseBuild()
+
+	enc.Encode(map[string]interface{}{
+		"Name":       string(rom.Name[:]),
+		"CRC1":       fmt.Sprintf("%08X", rom.CRC1),
+		"CRC2":       fmt.Sprintf("%08X", rom.CRC2),
+		"Build team": team,
+		"Build date": date,
+	})
 }
