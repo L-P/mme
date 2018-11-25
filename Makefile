@@ -2,7 +2,11 @@ VERSION=$(shell git describe --tags)
 BUILDFLAGS=-ldflags '-X main.Version=${VERSION}'
 EXEC=$(shell basename "$(shell pwd)")
 
-all:
+all: $(EXEC)
+
+$(EXEC):
+	cd front && yarn build --mode=production
+	packr build ${BUILDFLAGS}
 
 .PHONY: $(EXEC) run clean release
 
