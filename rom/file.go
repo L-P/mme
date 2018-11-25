@@ -23,7 +23,9 @@ type File struct {
 
 	Name  string
 	Valid bool
-	data  []byte
+	Type  string
+
+	data []byte
 }
 
 // Data returns the RAW file data

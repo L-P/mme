@@ -4,6 +4,7 @@
       <thead>
         <tr>
           <th>Name</th>
+          <th>Type</th>
           <th>VROMStart</th>
           <th>VROMEnd</th>
           <th>Data size</th>
@@ -17,6 +18,7 @@
           :key="index"
         >
           <td>{{ file.Name }}</td>
+          <td>{{ file.Type }}</td>
           <td>{{ file.VROMStart | hex(8) }}</td>
           <td>{{ file.VROMEnd | hex(8) }}</td>
           <td>{{ file.VROMEnd - file.VROMStart | humanizeBytes }}</td>

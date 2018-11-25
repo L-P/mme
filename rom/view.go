@@ -79,6 +79,7 @@ func (v *View) load(r io.ReadSeeker) error {
 	}
 
 	v.mapSceneEntranceMessages()
+	v.mapFileTypes()
 
 	return nil
 }
@@ -92,6 +93,36 @@ func (v *View) mapSceneEntranceMessages() {
 			}
 		}
 	}
+}
+
+// I said deal with it
+func (v *View) mapFileTypes() {
+	mapped := 0
+
+loop:
+	for k := range v.Files {
+		if v.Files[k].VROMStart == 0 {
+			continue
+		}
+
+		for _, scene := range v.Scenes {
+			if scene.VROMStart == v.Files[k].VROMStart {
+				v.Files[k].Type = "scene"
+				mapped++
+				continue loop
+			}
+
+			for _, room := range scene.Rooms {
+				if room.VROMStart == v.Files[k].VROMStart {
+					v.Files[k].Type = "room"
+					mapped++
+					continue loop
+				}
+			}
+		}
+	}
+
+	log.Printf("Mapped %d file types", mapped)
 }
 
 func (v *View) loadFiles(r io.ReadSeeker) error {
