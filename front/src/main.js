@@ -11,6 +11,15 @@ new Vue({
   render: h => h(App),
 }).$mount('#app');
 
+Vue.filter('maybeHex', (v, width) => {
+  if (typeof v === 'number') {
+    const hex = v.toString(16).toUpperCase().padStart(width, '0');
+    return `0x${hex}`;
+  }
+
+  return v;
+});
+
 Vue.filter('hex', (v, width) => {
   const hex = v.toString(16).toUpperCase().padStart(width, '0');
   return `0x${hex}`;

@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import ColorMap from './views/ColorMap.vue';
 import Scenes from './views/Scenes.vue';
+import SceneDetail from './views/SceneDetail.vue';
 import Files from './views/Files.vue';
 import Messages from './views/Messages.vue';
 
@@ -30,6 +31,11 @@ export default new Router({
     {
       path: '/messages',
       component: Messages,
+    },
+    {
+      path: '/scenes/:start',
+      component: SceneDetail,
+      name: 'SceneDetail',
     },
   ],
 });

@@ -69,10 +69,12 @@ type Scene struct {
 	CamerasAndCutscenesForActorsCount         byte   // 0x1Bxx0000 *
 	CamerasAndCutscenesForActorsSegmentOffset uint32 // 0xyyyyyyyy
 	MinimapsSegmentOffset                     uint32 // 0x1C000000 0xxxxxxxxx *
-	ChestPositionsCount                       byte   // 0x1Exx0000
-	ChestPositionsSegmentOffset               uint32 // 0xyyyyyyyy
+	MapChestPositionsCount                    byte   // 0x1Exx0000
+	MapChestPositionsSegmentOffset            uint32 // 0xyyyyyyyy
 
 	InternalSceneTableEntry
+
+	Rooms []Room
 
 	Name            string
 	EntranceMessage string
@@ -119,6 +121,29 @@ func (s *Scene) load(r io.ReadSeeker, entry InternalSceneTableEntry) {
 	size := int64(entry.VROMEnd) - s.DataStartOffset
 	s.data = make([]byte, size, size)
 	binary.Read(r, binary.BigEndian, s.data)
+
+	s.loadRooms(r)
+}
+
+func (s *Scene) loadRooms(r io.ReadSeeker) {
+	s.Rooms = make([]Room, s.RoomsCount, s.RoomsCount)
+	if len(s.Rooms) <= 0 {
+		return
+	}
+
+	listOffset := s.RoomsSegmentOffset & 0xFFFFFF // ditch 0x02
+	r.Seek(int64(s.VROMStart+listOffset), io.SeekStart)
+
+	var start uint32
+
+	for i := byte(0); i < s.RoomsCount; i++ {
+		binary.Read(r, binary.BigEndian, &start)
+
+		s.Rooms[i] = Room{
+			ID:        i,
+			VROMStart: start,
+		}
+	}
 }
 
 func (s *Scene) loadHeader(command byte, a uint32, b uint32) error {
@@ -180,8 +205,8 @@ func (s *Scene) loadHeader(command byte, a uint32, b uint32) error {
 	case 0x1C:
 		s.MinimapsSegmentOffset = b
 	case 0x1E:
-		s.ChestPositionsCount = byte((a & 0x00FF0000) >> 16)
-		s.ChestPositionsSegmentOffset = b
+		s.MapChestPositionsCount = byte((a & 0x00FF0000) >> 16)
+		s.MapChestPositionsSegmentOffset = b
 	}
 
 	return nil
