@@ -8,7 +8,7 @@ $(EXEC):
 .PHONY: $(EXEC) run clean
 
 clean:
-	rm -rf front/dist
+	rm -rf front/dist gin-bin
 
 run:
 	gin --appPort 8064 --immediate rom.z64
