@@ -7,6 +7,7 @@
           <th>EntranceMessage</th>
           <th>VROMStart</th>
           <th>VROMEnd</th>
+          <th>Rooms</th>
           <th>Data size</th>
           <th>Actions</th>
         </tr>
@@ -21,6 +22,7 @@
           <td>{{ scene.EntranceMessage }}</td>
           <td>{{ scene.VROMStart | hex(8) }}</td>
           <td>{{ scene.VROMEnd | hex(8) }}</td>
+          <td>{{ scene.Rooms === null ? 0 : scene.Rooms.length }}</td>
           <td>{{ scene.VROMEnd - scene.VROMStart | humanizeBytes }}</td>
           <td>
             <div class="field is-grouped">

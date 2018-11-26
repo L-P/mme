@@ -57,6 +57,8 @@ func NewView(path string) (*View, error) {
 		return nil, err
 	}
 
+	log.Print("ROM loaded.")
+
 	return v, nil
 }
 
@@ -196,6 +198,18 @@ func (v *View) GetSceneByVROMStart(start uint32) (*Scene, error) {
 		}
 	}
 	return nil, errors.New("scene not found")
+}
+
+// GetRoomByVROMStart returns a Room from a VROMStart
+func (v *View) GetRoomByVROMStart(start uint32) (*Room, error) {
+	for scene := range v.Scenes {
+		for room := range v.Scenes[scene].Rooms {
+			if v.Scenes[scene].Rooms[room].VROMStart == start {
+				return &v.Scenes[scene].Rooms[room], nil
+			}
+		}
+	}
+	return nil, errors.New("room not found")
 }
 
 // GetROM returns the raw ROM struct

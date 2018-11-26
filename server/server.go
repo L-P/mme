@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"strconv"
 	"time"
 
 	"github.com/L-P/mme/colormap"
@@ -64,6 +63,7 @@ func (s *Server) setupRoutes() {
 	s.router.Get("/api/colormap", s.colormapHandler())
 	s.router.Get("/api/messages", s.messagesHandler)
 
+	s.router.Get("/api/rooms/:start", s.roomDetailHandler)
 	s.router.Get("/api/scenes/:start", s.sceneDetailHandler)
 	s.router.Get("/api/scenes", s.scenesHandler)
 
@@ -118,38 +118,6 @@ func (s *Server) addCacheHeaders(h http.Handler) http.HandlerFunc {
 	}
 }
 
-func (s *Server) scenesHandler(w http.ResponseWriter, r *http.Request) {
-	w.Header().Add("Content-Type", "application/json")
-	enc := json.NewEncoder(w)
-	enc.Encode(s.rom.Scenes)
-}
-
-func (s *Server) filesHandler(w http.ResponseWriter, r *http.Request) {
-	w.Header().Add("Content-Type", "application/json")
-	enc := json.NewEncoder(w)
-	enc.Encode(s.rom.Files)
-}
-
-func (s *Server) fileDataHandler(w http.ResponseWriter, r *http.Request) {
-	start := vestigo.Param(r, "start")
-	i, err := strconv.ParseInt(start, 10, 32)
-	if err != nil {
-		log.Print(err)
-		return
-	}
-
-	file, err := s.rom.GetFileByVROMStart(uint32(i))
-	if err != nil {
-		log.Print(err)
-		return
-	}
-
-	w.Header().Add("Content-Length", fmt.Sprintf("%d", file.Size()))
-	w.Header().Add("Content-Type", "application/octet-stream")
-	w.Header().Add("Content-Disposition", "attachment")
-	w.Write(file.Data())
-}
-
 func (s *Server) messagesHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	enc := json.NewEncoder(w)
@@ -170,23 +138,4 @@ func (s *Server) romHandler(w http.ResponseWriter, r *http.Request) {
 		"Build team": team,
 		"Build date": date,
 	})
-}
-
-func (s *Server) sceneDetailHandler(w http.ResponseWriter, r *http.Request) {
-	start, err := strconv.ParseInt(vestigo.Param(r, "start"), 10, 32)
-	if err != nil {
-		log.Print(err)
-		return
-	}
-
-	scene, err := s.rom.GetSceneByVROMStart(uint32(start))
-	if err != nil {
-		log.Print(err)
-		return
-	}
-
-	w.Header().Add("Content-Type", "application/json")
-	enc := json.NewEncoder(w)
-
-	enc.Encode(scene)
 }

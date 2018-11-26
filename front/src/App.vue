@@ -13,7 +13,7 @@
           >
             <img
               alt="logo"
-              src="assets/mme.svg"
+              src="/assets/mme.svg"
             >
             Majora's Mask Explorer
           </RouterLink>
