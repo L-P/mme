@@ -3,7 +3,7 @@
     <div class="columns">
 
       <div class="column is-one-quarter">
-        <img src="assets/mme.svg">
+        <img src="/assets/mme.svg">
       </div>
 
       <div class="column">
