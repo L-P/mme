@@ -57,6 +57,8 @@ func NewView(path string) (*View, error) {
 		return nil, err
 	}
 
+	log.Print("ROM loaded.")
+
 	return v, nil
 }
 
