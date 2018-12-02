@@ -1,0 +1,4832 @@
+[
+    {
+        "ID": 0,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": "Player"
+    },
+    {
+        "ID": 1,
+        "FileName": "En_Test",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 2,
+        "FileName": "En_GirlA",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 3,
+        "FileName": "En_Part",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 4,
+        "FileName": "En_Light",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Deku Shrine - Flames of Varying Colours"
+    },
+    {
+        "ID": 5,
+        "FileName": "En_Door",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Wooden Door"
+    },
+    {
+        "ID": 6,
+        "FileName": "En_Box",
+        "Object": 12,
+        "Translation": "Chest",
+        "Identification": "Treasure Chest"
+    },
+    {
+        "ID": 7,
+        "FileName": "En_Pametfrog",
+        "Object": 296,
+        "Translation": "",
+        "Identification": "Gekko & Snapper Miniboss - Gekko"
+    },
+    {
+        "ID": 8,
+        "FileName": "En_Okuta",
+        "Object": 5,
+        "Translation": "Octorok",
+        "Identification": "Octorok"
+    },
+    {
+        "ID": 9,
+        "FileName": "En_Bom",
+        "Object": 1,
+        "Translation": "Bomb",
+        "Identification": "Bomb"
+    },
+    {
+        "ID": 10,
+        "FileName": "En_Wallmas",
+        "Object": 9,
+        "Translation": "Wallmaster",
+        "Identification": "Wallmaster"
+    },
+    {
+        "ID": 11,
+        "FileName": "En_Dodongo",
+        "Object": 10,
+        "Translation": "",
+        "Identification": "Dodongo"
+    },
+    {
+        "ID": 12,
+        "FileName": "En_Firefly",
+        "Object": 11,
+        "Translation": "",
+        "Identification": "Keese"
+    },
+    {
+        "ID": 13,
+        "FileName": "En_Horse",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 14,
+        "FileName": "En_Item00",
+        "Object": 0,
+        "Translation": "",
+        "Identification": "Collectable Items"
+    },
+    {
+        "ID": 15,
+        "FileName": "En_Arrow",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Small Orange Flame That Fades Away"
+    },
+    {
+        "ID": 16,
+        "FileName": "En_Elf",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Tatl"
+    },
+    {
+        "ID": 17,
+        "FileName": "En_Niw",
+        "Object": 15,
+        "Translation": "Chicken",
+        "Identification": "Cucco"
+    },
+    {
+        "ID": 18,
+        "FileName": "En_Tite",
+        "Object": 18,
+        "Translation": "Tektite",
+        "Identification": "Tektite"
+    },
+    {
+        "ID": 19,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 20,
+        "FileName": "En_Peehat",
+        "Object": 20,
+        "Translation": "Peahat",
+        "Identification": "Peahat"
+    },
+    {
+        "ID": 21,
+        "FileName": "En_Butte",
+        "Object": 2,
+        "Translation": "Butterfly",
+        "Identification": ""
+    },
+    {
+        "ID": 22,
+        "FileName": "En_Insect",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Bug"
+    },
+    {
+        "ID": 23,
+        "FileName": "En_Fish",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Fish"
+    },
+    {
+        "ID": 24,
+        "FileName": "En_Holl",
+        "Object": 1,
+        "Translation": "Hole/Hall",
+        "Identification": "Black Room Transition Plane"
+    },
+    {
+        "ID": 25,
+        "FileName": "En_Dinofos",
+        "Object": 23,
+        "Translation": "Dinolfos",
+        "Identification": "Dinolfos"
+    },
+    {
+        "ID": 26,
+        "FileName": "En_Hata",
+        "Object": 95,
+        "Translation": "Flag",
+        "Identification": "Red Flag on Post"
+    },
+    {
+        "ID": 27,
+        "FileName": "En_Zl1",
+        "Object": 25,
+        "Translation": "Zelda 1",
+        "Identification": "Child Zelda"
+    },
+    {
+        "ID": 28,
+        "FileName": "En_Viewer",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 29,
+        "FileName": "En_Bubble",
+        "Object": 14,
+        "Translation": "",
+        "Identification": "Shabom"
+    },
+    {
+        "ID": 30,
+        "FileName": "Door_Shutter",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Studded Lifting Door"
+    },
+    {
+        "ID": 31,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 32,
+        "FileName": "En_Boom",
+        "Object": 1,
+        "Translation": "Boomerang",
+        "Identification": "Zora Fin Returning"
+    },
+    {
+        "ID": 33,
+        "FileName": "En_Torch2",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 34,
+        "FileName": "En_Minifrog",
+        "Object": 188,
+        "Translation": "",
+        "Identification": "Frog"
+    },
+    {
+        "ID": 35,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 36,
+        "FileName": "En_St",
+        "Object": 32,
+        "Translation": "Skulltula",
+        "Identification": "Skulltula"
+    },
+    {
+        "ID": 37,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 38,
+        "FileName": "En_A_Obj",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 39,
+        "FileName": "Obj_Wturn",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 40,
+        "FileName": "En_River_Sound",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 41,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 42,
+        "FileName": "En_Ossan",
+        "Object": 1,
+        "Translation": "Middle-Aged Man",
+        "Identification": ""
+    },
+    {
+        "ID": 43,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 44,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 45,
+        "FileName": "En_Famos",
+        "Object": 29,
+        "Translation": "? Armos",
+        "Identification": "Death Armos"
+    },
+    {
+        "ID": 46,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 47,
+        "FileName": "En_Bombf",
+        "Object": 42,
+        "Translation": "Bombflower",
+        "Identification": "Bombflower"
+    },
+    {
+        "ID": 48,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 49,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 50,
+        "FileName": "En_Am",
+        "Object": 48,
+        "Translation": "Armos",
+        "Identification": "Armos"
+    },
+    {
+        "ID": 51,
+        "FileName": "En_Dekubaba",
+        "Object": 49,
+        "Translation": "",
+        "Identification": "Deku Baba"
+    },
+    {
+        "ID": 52,
+        "FileName": "En_M_Fire1",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 53,
+        "FileName": "En_M_Thunder",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 54,
+        "FileName": "Bg_Breakwall",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 55,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 56,
+        "FileName": "Door_Warp1",
+        "Object": 62,
+        "Translation": "",
+        "Identification": "Blue Warp"
+    },
+    {
+        "ID": 57,
+        "FileName": "Obj_Syokudai",
+        "Object": 128,
+        "Translation": "Candlestick",
+        "Identification": "Golden Torch Stand"
+    },
+    {
+        "ID": 58,
+        "FileName": "Item_B_Heart",
+        "Object": 150,
+        "Translation": "",
+        "Identification": "Heart Container"
+    },
+    {
+        "ID": 59,
+        "FileName": "En_Dekunuts",
+        "Object": 64,
+        "Translation": "",
+        "Identification": "Mad Scrub"
+    },
+    {
+        "ID": 60,
+        "FileName": "En_Bbfall",
+        "Object": 81,
+        "Translation": "Bubble ?",
+        "Identification": "Red Bubble"
+    },
+    {
+        "ID": 61,
+        "FileName": "Arms_Hook",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Hookshot"
+    },
+    {
+        "ID": 62,
+        "FileName": "En_Bb",
+        "Object": 81,
+        "Translation": "Bubble",
+        "Identification": "Blue Bubble"
+    },
+    {
+        "ID": 63,
+        "FileName": "Bg_Keikoku_Spr",
+        "Object": 382,
+        "Translation": "Canyon - Spring",
+        "Identification": "Fountain"
+    },
+    {
+        "ID": 64,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 65,
+        "FileName": "En_Wood02",
+        "Object": 97,
+        "Translation": "",
+        "Identification": "Termina Field Tree"
+    },
+    {
+        "ID": 66,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 67,
+        "FileName": "En_Death",
+        "Object": 82,
+        "Translation": "",
+        "Identification": "Gomess"
+    },
+    {
+        "ID": 68,
+        "FileName": "En_Minideath",
+        "Object": 82,
+        "Translation": "",
+        "Identification": "Bats Surrounding Gomess?"
+    },
+    {
+        "ID": 69,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 70,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 71,
+        "FileName": "En_Vm",
+        "Object": 106,
+        "Translation": "Beamos",
+        "Identification": "Beamos"
+    },
+    {
+        "ID": 72,
+        "FileName": "Demo_Effect",
+        "Object": 1,
+        "Translation": "Effect",
+        "Identification": ""
+    },
+    {
+        "ID": 73,
+        "FileName": "Demo_Kankyo",
+        "Object": 1,
+        "Translation": "Environment",
+        "Identification": ""
+    },
+    {
+        "ID": 74,
+        "FileName": "En_Floormas",
+        "Object": 9,
+        "Translation": "Floormaster",
+        "Identification": "Floormaster"
+    },
+    {
+        "ID": 75,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 76,
+        "FileName": "En_Rd",
+        "Object": 117,
+        "Translation": "Redead",
+        "Identification": "Gibdo"
+    },
+    {
+        "ID": 77,
+        "FileName": "Bg_F40_Flift",
+        "Object": 92,
+        "Translation": "",
+        "Identification": "Stone Tower Temple - Grey Square Stone Elevator"
+    },
+    {
+        "ID": 78,
+        "FileName": "",
+        "Object": 0,
+        "Translation": "",
+        "Identification": "Golden Gauntlets Rock (JP 1.0 Only)"
+    },
+    {
+        "ID": 79,
+        "FileName": "Obj_Mure",
+        "Object": 1,
+        "Translation": "Group",
+        "Identification": ""
+    },
+    {
+        "ID": 80,
+        "FileName": "En_Sw",
+        "Object": 32,
+        "Translation": "Skullwalltula",
+        "Identification": "Skullwalltula"
+    },
+    {
+        "ID": 81,
+        "FileName": "Object_Kankyo",
+        "Object": 1,
+        "Translation": "Environment",
+        "Identification": ""
+    },
+    {
+        "ID": 82,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 83,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 84,
+        "FileName": "En_Horse_Link_Child",
+        "Object": 125,
+        "Translation": "",
+        "Identification": "Child Epona"
+    },
+    {
+        "ID": 85,
+        "FileName": "Door_Ana",
+        "Object": 2,
+        "Translation": "Hole",
+        "Identification": "Hole in Ground Exit"
+    },
+    {
+        "ID": 86,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 87,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 88,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 89,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 90,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 91,
+        "FileName": "En_Encount1",
+        "Object": 1,
+        "Translation": "Encounter",
+        "Identification": ""
+    },
+    {
+        "ID": 92,
+        "FileName": "Demo_Tre_Lgt",
+        "Object": 12,
+        "Translation": "Treasure Chest - Light",
+        "Identification": "Light Radiating From Treasure Chest"
+    },
+    {
+        "ID": 93,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 94,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 95,
+        "FileName": "En_Encount2",
+        "Object": 640,
+        "Translation": "Encounter",
+        "Identification": "Astral Observatory - Majora's Mask Balloon"
+    },
+    {
+        "ID": 96,
+        "FileName": "En_Fire_Rock",
+        "Object": 112,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 97,
+        "FileName": "Bg_Ctower_Rot",
+        "Object": 136,
+        "Translation": "Clocktower - Rotating",
+        "Identification": "Twisting Path to Clocktower"
+    },
+    {
+        "ID": 98,
+        "FileName": "Mir_Ray",
+        "Object": 135,
+        "Translation": "Mirror Ray",
+        "Identification": "Mirror Shield Face & Light Ray"
+    },
+    {
+        "ID": 99,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 100,
+        "FileName": "En_Sb",
+        "Object": 142,
+        "Translation": "Shellblade",
+        "Identification": "Shellblade"
+    },
+    {
+        "ID": 101,
+        "FileName": "En_Bigslime",
+        "Object": 296,
+        "Translation": "",
+        "Identification": "Mad Jelly"
+    },
+    {
+        "ID": 102,
+        "FileName": "En_Karebaba",
+        "Object": 49,
+        "Translation": "Wilted Baba",
+        "Identification": "Wilted Deku Baba"
+    },
+    {
+        "ID": 103,
+        "FileName": "En_In",
+        "Object": 153,
+        "Translation": "Ingo",
+        "Identification": "Gorman Bros."
+    },
+    {
+        "ID": 104,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 105,
+        "FileName": "En_Ru",
+        "Object": 162,
+        "Translation": "Ruto",
+        "Identification": "Ruto"
+    },
+    {
+        "ID": 106,
+        "FileName": "En_Bom_Chu",
+        "Object": 1,
+        "Translation": "Bombchu",
+        "Identification": "Bombchu"
+    },
+    {
+        "ID": 107,
+        "FileName": "En_Horse_Game_Check",
+        "Object": 401,
+        "Translation": "",
+        "Identification": "Arrow, Posts, & Splatter"
+    },
+    {
+        "ID": 108,
+        "FileName": "En_Rr",
+        "Object": 171,
+        "Translation": "Like Like",
+        "Identification": "Like Like"
+    },
+    {
+        "ID": 109,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 110,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 111,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 112,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 113,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 114,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 115,
+        "FileName": "En_Fr",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 116,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 117,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 118,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 119,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 120,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 121,
+        "FileName": "",
+        "Object": 0,
+        "Translation": "",
+        "Identification": "Fishing Pond Owner (JP 1.0 Only)"
+    },
+    {
+        "ID": 122,
+        "FileName": "Obj_Oshihiki",
+        "Object": 3,
+        "Translation": "Push & Pull",
+        "Identification": "Pushable Block"
+    },
+    {
+        "ID": 123,
+        "FileName": "Eff_Dust",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 124,
+        "FileName": "Bg_Umajump",
+        "Object": 1,
+        "Translation": "Horse Jump",
+        "Identification": ""
+    },
+    {
+        "ID": 125,
+        "FileName": "Arrow_Fire",
+        "Object": 1,
+        "Translation": "Fire Arrow",
+        "Identification": "Fire Arrow"
+    },
+    {
+        "ID": 126,
+        "FileName": "Arrow_Ice",
+        "Object": 1,
+        "Translation": "Ice Arrow",
+        "Identification": "Ice Arrow"
+    },
+    {
+        "ID": 127,
+        "FileName": "Arrow_Light",
+        "Object": 1,
+        "Translation": "Light Arrow",
+        "Identification": "Light Arrow"
+    },
+    {
+        "ID": 128,
+        "FileName": "Item_Etcetera",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 129,
+        "FileName": "Obj_Kibako",
+        "Object": 1,
+        "Translation": "Wooden Crate",
+        "Identification": "Small Wooden Crate"
+    },
+    {
+        "ID": 130,
+        "FileName": "Obj_Tsubo",
+        "Object": 1,
+        "Translation": "Pot",
+        "Identification": "Pot"
+    },
+    {
+        "ID": 131,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 132,
+        "FileName": "En_Ik",
+        "Object": 216,
+        "Translation": "Iron Knuckle",
+        "Identification": "Iron Knuckle"
+    },
+    {
+        "ID": 133,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 134,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 135,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 136,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 137,
+        "FileName": "Demo_Shd",
+        "Object": 339,
+        "Translation": "Cutscene - Shadow",
+        "Identification": ""
+    },
+    {
+        "ID": 138,
+        "FileName": "En_Dns",
+        "Object": 308,
+        "Translation": "Deku Scrub Salesman",
+        "Identification": "Deku Palace - King's Chamber Deku Guard"
+    },
+    {
+        "ID": 139,
+        "FileName": "Elf_Msg",
+        "Object": 1,
+        "Translation": "Fairy Message",
+        "Identification": ""
+    },
+    {
+        "ID": 140,
+        "FileName": "En_Honotrap",
+        "Object": 3,
+        "Translation": "Flame - Trap",
+        "Identification": ""
+    },
+    {
+        "ID": 141,
+        "FileName": "En_Tubo_Trap",
+        "Object": 3,
+        "Translation": "Pot - Trap",
+        "Identification": ""
+    },
+    {
+        "ID": 142,
+        "FileName": "Obj_Ice_Poly",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 143,
+        "FileName": "En_Fz",
+        "Object": 228,
+        "Translation": "Freezard",
+        "Identification": "Freezard"
+    },
+    {
+        "ID": 144,
+        "FileName": "En_Kusa",
+        "Object": 1,
+        "Translation": "Grass",
+        "Identification": ""
+    },
+    {
+        "ID": 145,
+        "FileName": "Obj_Bean",
+        "Object": 238,
+        "Translation": "",
+        "Identification": "Floating Bean Plant"
+    },
+    {
+        "ID": 146,
+        "FileName": "Obj_Bombiwa",
+        "Object": 298,
+        "Translation": "Bombable Rock",
+        "Identification": "Bombable Rock"
+    },
+    {
+        "ID": 147,
+        "FileName": "Obj_Switch",
+        "Object": 3,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 148,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 149,
+        "FileName": "Obj_Lift",
+        "Object": 237,
+        "Translation": "Elevator",
+        "Identification": "Dampé's Grave - Brown Elevator"
+    },
+    {
+        "ID": 150,
+        "FileName": "Obj_Hsblock",
+        "Object": 236,
+        "Translation": "Hookshot Block",
+        "Identification": "Stone Hookshot Target Pillar"
+    },
+    {
+        "ID": 151,
+        "FileName": "En_Okarina_Tag",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 152,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 153,
+        "FileName": "En_Goroiwa",
+        "Object": 239,
+        "Translation": "Rolling Stone",
+        "Identification": ""
+    },
+    {
+        "ID": 154,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 155,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 156,
+        "FileName": "En_Daiku",
+        "Object": 241,
+        "Translation": "Carpenter",
+        "Identification": "Carpenter"
+    },
+    {
+        "ID": 157,
+        "FileName": "En_Nwc",
+        "Object": 242,
+        "Translation": "Cucco Child",
+        "Identification": "Cucco Chick"
+    },
+    {
+        "ID": 158,
+        "FileName": "Item_Inbox",
+        "Object": 1,
+        "Translation": "Item - In Chest",
+        "Identification": ""
+    },
+    {
+        "ID": 159,
+        "FileName": "En_Ge1",
+        "Object": 230,
+        "Translation": "Gerudo 1",
+        "Identification": "Gerudo Lieutenant"
+    },
+    {
+        "ID": 160,
+        "FileName": "Obj_Blockstop",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 161,
+        "FileName": "En_Sda",
+        "Object": 1,
+        "Translation": "Shadow ?",
+        "Identification": ""
+    },
+    {
+        "ID": 162,
+        "FileName": "En_Clear_Tag",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Dissipating Cloud of Black Smoke Following Explosion"
+    },
+    {
+        "ID": 163,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 164,
+        "FileName": "En_Gm",
+        "Object": 584,
+        "Translation": "Gorman",
+        "Identification": "Gorman"
+    },
+    {
+        "ID": 165,
+        "FileName": "En_Ms",
+        "Object": 244,
+        "Translation": "Bean Seller",
+        "Identification": "Bean Seller"
+    },
+    {
+        "ID": 166,
+        "FileName": "En_Hs",
+        "Object": 245,
+        "Translation": "",
+        "Identification": "Grog"
+    },
+    {
+        "ID": 167,
+        "FileName": "Bg_Ingate",
+        "Object": 383,
+        "Translation": "",
+        "Identification": "Swamp - Tour Boat"
+    },
+    {
+        "ID": 168,
+        "FileName": "En_Kanban",
+        "Object": 252,
+        "Translation": "Sign",
+        "Identification": "Square Signpost"
+    },
+    {
+        "ID": 169,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 170,
+        "FileName": "En_Attack_Niw",
+        "Object": 15,
+        "Translation": "Attacking Cucco",
+        "Identification": "Attacking Cucco"
+    },
+    {
+        "ID": 171,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 172,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 173,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 174,
+        "FileName": "En_Mk",
+        "Object": 254,
+        "Translation": "Marine Researcher",
+        "Identification": "Marine Researcher"
+    },
+    {
+        "ID": 175,
+        "FileName": "En_Owl",
+        "Object": 253,
+        "Translation": "",
+        "Identification": "Kaepora Gaebora"
+    },
+    {
+        "ID": 176,
+        "FileName": "En_Ishi",
+        "Object": 1,
+        "Translation": "Rock",
+        "Identification": ""
+    },
+    {
+        "ID": 177,
+        "FileName": "Obj_Hana",
+        "Object": 442,
+        "Translation": "Flower",
+        "Identification": ""
+    },
+    {
+        "ID": 178,
+        "FileName": "Obj_Lightswitch",
+        "Object": 247,
+        "Translation": "",
+        "Identification": "Sun Switch"
+    },
+    {
+        "ID": 179,
+        "FileName": "Obj_Mure2",
+        "Object": 1,
+        "Translation": "Group 2",
+        "Identification": ""
+    },
+    {
+        "ID": 180,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 181,
+        "FileName": "En_Fu",
+        "Object": 320,
+        "Translation": "Windmill",
+        "Identification": "Honey & Darling"
+    },
+    {
+        "ID": 182,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 183,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 184,
+        "FileName": "En_Stream",
+        "Object": 262,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 185,
+        "FileName": "En_Mm",
+        "Object": 1,
+        "Translation": "Marathon Man",
+        "Identification": ""
+    },
+    {
+        "ID": 186,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 187,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 188,
+        "FileName": "En_Weather_Tag",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 189,
+        "FileName": "En_Ani",
+        "Object": 194,
+        "Translation": "Dude",
+        "Identification": "Part-Timer"
+    },
+    {
+        "ID": 190,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 191,
+        "FileName": "En_Js",
+        "Object": 625,
+        "Translation": "Carpet Seller",
+        "Identification": "Moon Child"
+    },
+    {
+        "ID": 192,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 193,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 194,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 195,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 196,
+        "FileName": "En_Okarina_Effect",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 197,
+        "FileName": "En_Mag",
+        "Object": 277,
+        "Translation": "",
+        "Identification": "Title Logo"
+    },
+    {
+        "ID": 198,
+        "FileName": "Elf_Msg2",
+        "Object": 1,
+        "Translation": "Message 2",
+        "Identification": ""
+    },
+    {
+        "ID": 199,
+        "FileName": "Bg_F40_Swlift",
+        "Object": 92,
+        "Translation": "? Elevator",
+        "Identification": "Stone Tower Temple - Floating Stone Platform"
+    },
+    {
+        "ID": 200,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 201,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 202,
+        "FileName": "En_Kakasi",
+        "Object": 285,
+        "Translation": "Scarecrow",
+        "Identification": "Scarecrow"
+    },
+    {
+        "ID": 203,
+        "FileName": "Obj_Makeoshihiki",
+        "Object": 1,
+        "Translation": "Make Push & Pull",
+        "Identification": ""
+    },
+    {
+        "ID": 204,
+        "FileName": "Oceff_Spot",
+        "Object": 1,
+        "Translation": "Ocarina Effect - Spot",
+        "Identification": ""
+    },
+    {
+        "ID": 205,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 206,
+        "FileName": "En_Torch",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 207,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 208,
+        "FileName": "Shot_Sun",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 209,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 210,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 211,
+        "FileName": "Obj_Roomtimer",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 212,
+        "FileName": "En_Ssh",
+        "Object": 295,
+        "Translation": "",
+        "Identification": "Cursed Man"
+    },
+    {
+        "ID": 213,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 214,
+        "FileName": "Oceff_Wipe",
+        "Object": 1,
+        "Translation": "Ocarina Effect - Wipe",
+        "Identification": ""
+    },
+    {
+        "ID": 215,
+        "FileName": "Oceff_Storm",
+        "Object": 1,
+        "Translation": "Ocarina Effect - Storm",
+        "Identification": ""
+    },
+    {
+        "ID": 216,
+        "FileName": "Obj_Demo",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 217,
+        "FileName": "En_Minislime",
+        "Object": 296,
+        "Translation": "",
+        "Identification": "Mad Jelly - Jelly Droplets?"
+    },
+    {
+        "ID": 218,
+        "FileName": "En_Nutsball",
+        "Object": 1,
+        "Translation": "Deku Scrub Ball",
+        "Identification": "Deku Nut Projectile"
+    },
+    {
+        "ID": 219,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 220,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 221,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 222,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 223,
+        "FileName": "Oceff_Wipe2",
+        "Object": 1,
+        "Translation": "Ocarina Effect - Wipe 2",
+        "Identification": ""
+    },
+    {
+        "ID": 224,
+        "FileName": "Oceff_Wipe3",
+        "Object": 1,
+        "Translation": "Ocarina Effect - Wipe 3",
+        "Identification": ""
+    },
+    {
+        "ID": 225,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 226,
+        "FileName": "En_Dg",
+        "Object": 306,
+        "Translation": "Dog",
+        "Identification": "Dog"
+    },
+    {
+        "ID": 227,
+        "FileName": "En_Si",
+        "Object": 32,
+        "Translation": "",
+        "Identification": "Gold Skulltula Token"
+    },
+    {
+        "ID": 228,
+        "FileName": "Obj_Comb",
+        "Object": 441,
+        "Translation": "Honeycomb",
+        "Identification": "Honeycomb"
+    },
+    {
+        "ID": 229,
+        "FileName": "Obj_Kibako2",
+        "Object": 307,
+        "Translation": "Wooden Crate 2",
+        "Identification": "Normal Wooden Crate"
+    },
+    {
+        "ID": 230,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 231,
+        "FileName": "En_Hs2",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Blue Target Spot"
+    },
+    {
+        "ID": 232,
+        "FileName": "Obj_Mure3",
+        "Object": 1,
+        "Translation": "Group 3",
+        "Identification": ""
+    },
+    {
+        "ID": 233,
+        "FileName": "En_Tg",
+        "Object": 320,
+        "Translation": "Target Game",
+        "Identification": "Honey & Darling"
+    },
+    {
+        "ID": 234,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 235,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 236,
+        "FileName": "En_Wf",
+        "Object": 321,
+        "Translation": "Wolfos",
+        "Identification": "Wolfos"
+    },
+    {
+        "ID": 237,
+        "FileName": "En_Skb",
+        "Object": 322,
+        "Translation": "Stalbaby",
+        "Identification": "Stalchild"
+    },
+    {
+        "ID": 238,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 239,
+        "FileName": "En_Gs",
+        "Object": 323,
+        "Translation": "Gossip Stone",
+        "Identification": "Gossip Stone"
+    },
+    {
+        "ID": 240,
+        "FileName": "Obj_Sound",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Termina Field - Fountain Sound Effects"
+    },
+    {
+        "ID": 241,
+        "FileName": "En_Crow",
+        "Object": 6,
+        "Translation": "",
+        "Identification": "Guay"
+    },
+    {
+        "ID": 242,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 243,
+        "FileName": "En_Cow",
+        "Object": 326,
+        "Translation": "",
+        "Identification": "Cow"
+    },
+    {
+        "ID": 244,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 245,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 246,
+        "FileName": "Oceff_Wipe4",
+        "Object": 1,
+        "Translation": "Ocarina Effect - Wipe 4",
+        "Identification": ""
+    },
+    {
+        "ID": 247,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 248,
+        "FileName": "En_Zo",
+        "Object": 208,
+        "Translation": "Zora",
+        "Identification": "Zora"
+    },
+    {
+        "ID": 249,
+        "FileName": "Obj_Makekinsuta",
+        "Object": 1,
+        "Translation": "? Gold Skulltula",
+        "Identification": ""
+    },
+    {
+        "ID": 250,
+        "FileName": "En_Ge3",
+        "Object": 304,
+        "Translation": "Gerudo 3",
+        "Identification": "Aveil"
+    },
+    {
+        "ID": 251,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 252,
+        "FileName": "Obj_Hamishi",
+        "Object": 2,
+        "Translation": "Hammer Stone",
+        "Identification": ""
+    },
+    {
+        "ID": 253,
+        "FileName": "En_Zl4",
+        "Object": 402,
+        "Translation": "Zelda 4",
+        "Identification": "Skullkid With Flute, OoT, Link Mask, Majora's Mask"
+    },
+    {
+        "ID": 254,
+        "FileName": "En_Mm2",
+        "Object": 1,
+        "Translation": "Marathon Man 2",
+        "Identification": "Postman's Letter to Himself"
+    },
+    {
+        "ID": 255,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 256,
+        "FileName": "Door_Spiral",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 257,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 258,
+        "FileName": "Obj_Pzlblock",
+        "Object": 1,
+        "Translation": "Puzzle Block",
+        "Identification": ""
+    },
+    {
+        "ID": 259,
+        "FileName": "Obj_Toge",
+        "Object": 100,
+        "Translation": "Thorn",
+        "Identification": "Blade Trap"
+    },
+    {
+        "ID": 260,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 261,
+        "FileName": "Obj_Armos",
+        "Object": 48,
+        "Translation": "Armos",
+        "Identification": "Armos Statue"
+    },
+    {
+        "ID": 262,
+        "FileName": "Obj_Boyo",
+        "Object": 335,
+        "Translation": "Boyoing",
+        "Identification": "Green Bumper"
+    },
+    {
+        "ID": 263,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 264,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 265,
+        "FileName": "En_Grasshopper",
+        "Object": 334,
+        "Translation": "",
+        "Identification": "Dragonfly"
+    },
+    {
+        "ID": 266,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 267,
+        "FileName": "Obj_Grass",
+        "Object": 2,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 268,
+        "FileName": "Obj_Grass_Carry",
+        "Object": 2,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 269,
+        "FileName": "Obj_Grass_Unit",
+        "Object": 2,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 270,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 271,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 272,
+        "FileName": "Bg_Fire_Wall",
+        "Object": 339,
+        "Translation": "",
+        "Identification": "Proximity-Activated Firewall"
+    },
+    {
+        "ID": 273,
+        "FileName": "En_Bu",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 274,
+        "FileName": "En_Encount3",
+        "Object": 571,
+        "Translation": "Encounter 3",
+        "Identification": ""
+    },
+    {
+        "ID": 275,
+        "FileName": "En_Jso",
+        "Object": 341,
+        "Translation": "",
+        "Identification": "Garo Master"
+    },
+    {
+        "ID": 276,
+        "FileName": "Obj_Chikuwa",
+        "Object": 237,
+        "Translation": "Tube-Shaped Fishpaste Cake",
+        "Identification": ""
+    },
+    {
+        "ID": 277,
+        "FileName": "En_Knight",
+        "Object": 342,
+        "Translation": "",
+        "Identification": "Igos du Ikana"
+    },
+    {
+        "ID": 278,
+        "FileName": "En_Warp_tag",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 279,
+        "FileName": "En_Aob_01",
+        "Object": 215,
+        "Translation": "",
+        "Identification": "Mamamu Yan"
+    },
+    {
+        "ID": 280,
+        "FileName": "En_Boj_01",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 281,
+        "FileName": "En_Boj_02",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 282,
+        "FileName": "En_Boj_03",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 283,
+        "FileName": "En_Encount4",
+        "Object": 1,
+        "Translation": "Encounter 4",
+        "Identification": ""
+    },
+    {
+        "ID": 284,
+        "FileName": "En_Bom_Bowl_Man",
+        "Object": 272,
+        "Translation": "Bombchu - Bowling - Man",
+        "Identification": "Bomber"
+    },
+    {
+        "ID": 285,
+        "FileName": "En_Syateki_Man",
+        "Object": 428,
+        "Translation": "Shooting Gallery - Man",
+        "Identification": "Swamp Shooting Gallery Manager"
+    },
+    {
+        "ID": 286,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 287,
+        "FileName": "Bg_Icicle",
+        "Object": 343,
+        "Translation": "",
+        "Identification": "Blue Icicle"
+    },
+    {
+        "ID": 288,
+        "FileName": "En_Syateki_Crow",
+        "Object": 6,
+        "Translation": "Shooting Gallery - Crow",
+        "Identification": "Shooting Gallery - Guay"
+    },
+    {
+        "ID": 289,
+        "FileName": "En_Boj_04",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 290,
+        "FileName": "En_Cne_01",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 291,
+        "FileName": "En_Bba_01",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 292,
+        "FileName": "En_Bji_01",
+        "Object": 222,
+        "Translation": "",
+        "Identification": "Shikashi"
+    },
+    {
+        "ID": 293,
+        "FileName": "Bg_Spdweb",
+        "Object": 344,
+        "Translation": "Spiderweb",
+        "Identification": "Spiderweb"
+    },
+    {
+        "ID": 294,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 295,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 296,
+        "FileName": "En_Mt_tag",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 297,
+        "FileName": "Boss_01",
+        "Object": 346,
+        "Translation": "",
+        "Identification": "Odolwa"
+    },
+    {
+        "ID": 298,
+        "FileName": "Boss_02",
+        "Object": 347,
+        "Translation": "",
+        "Identification": "Twinmold"
+    },
+    {
+        "ID": 299,
+        "FileName": "Boss_03",
+        "Object": 348,
+        "Translation": "",
+        "Identification": "Gyorg"
+    },
+    {
+        "ID": 300,
+        "FileName": "Boss_04",
+        "Object": 349,
+        "Translation": "",
+        "Identification": "Wart"
+    },
+    {
+        "ID": 301,
+        "FileName": "Boss_05",
+        "Object": 350,
+        "Translation": "",
+        "Identification": "Bio Deku Baba"
+    },
+    {
+        "ID": 302,
+        "FileName": "Boss_06",
+        "Object": 342,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 303,
+        "FileName": "Boss_07",
+        "Object": 352,
+        "Translation": "",
+        "Identification": "Majora"
+    },
+    {
+        "ID": 304,
+        "FileName": "Bg_Dy_Yoseizo",
+        "Object": 8,
+        "Translation": "Great Fairy - Fairy Statue",
+        "Identification": "Great Fairy"
+    },
+    {
+        "ID": 305,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 306,
+        "FileName": "En_Boj_05",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 307,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 308,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 309,
+        "FileName": "En_Sob1",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 310,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 311,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 312,
+        "FileName": "En_Go",
+        "Object": 161,
+        "Translation": "Goron",
+        "Identification": "Goron"
+    },
+    {
+        "ID": 313,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 314,
+        "FileName": "En_Raf",
+        "Object": 353,
+        "Translation": "",
+        "Identification": "Carnivorous Lilypad"
+    },
+    {
+        "ID": 315,
+        "FileName": "Obj_Funen",
+        "Object": 354,
+        "Translation": "Incombustibility",
+        "Identification": ""
+    },
+    {
+        "ID": 316,
+        "FileName": "Obj_Raillift",
+        "Object": 355,
+        "Translation": "Rail Elevator",
+        "Identification": "Various Elevators"
+    },
+    {
+        "ID": 317,
+        "FileName": "Bg_Numa_Hana",
+        "Object": 356,
+        "Translation": "Swamp - Flower",
+        "Identification": "Woodfall Temple - Wooden Flower"
+    },
+    {
+        "ID": 318,
+        "FileName": "Obj_Flowerpot",
+        "Object": 357,
+        "Translation": "",
+        "Identification": "Breakable Pot With Grass"
+    },
+    {
+        "ID": 319,
+        "FileName": "Obj_Spinyroll",
+        "Object": 358,
+        "Translation": "",
+        "Identification": "Spike-Covered Log"
+    },
+    {
+        "ID": 320,
+        "FileName": "Dm_Hina",
+        "Object": 460,
+        "Translation": "Cutscene - Doll",
+        "Identification": "Cutscene - Boss Remains"
+    },
+    {
+        "ID": 321,
+        "FileName": "En_Syateki_Wf",
+        "Object": 321,
+        "Translation": "Shooting Gallery - Wolfos",
+        "Identification": "Shooting Gallery - Wolfos"
+    },
+    {
+        "ID": 322,
+        "FileName": "Obj_Skateblock",
+        "Object": 3,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 323,
+        "FileName": "Obj_Iceblock",
+        "Object": 359,
+        "Translation": "",
+        "Identification": "Ice Block That Appears After Freezing Enemy"
+    },
+    {
+        "ID": 324,
+        "FileName": "En_Bigpamet",
+        "Object": 422,
+        "Translation": "",
+        "Identification": "Gekko & Snapper Miniboss - Snapper"
+    },
+    {
+        "ID": 325,
+        "FileName": "En_Syateki_Dekunuts",
+        "Object": 64,
+        "Translation": "Shooting Gallery - Deku Scrub",
+        "Identification": "Shooting Gallery - Deku Scrub"
+    },
+    {
+        "ID": 326,
+        "FileName": "Elf_Msg3",
+        "Object": 1,
+        "Translation": "Elf - Message 3",
+        "Identification": ""
+    },
+    {
+        "ID": 327,
+        "FileName": "En_Fg",
+        "Object": 188,
+        "Translation": "Frog",
+        "Identification": "Frog"
+    },
+    {
+        "ID": 328,
+        "FileName": "Dm_Ravine",
+        "Object": 361,
+        "Translation": "Cutscene - Ravine",
+        "Identification": "Link Riding Through Lost Woods Cutscene - Tree Trunk"
+    },
+    {
+        "ID": 329,
+        "FileName": "Dm_Sa",
+        "Object": 402,
+        "Translation": "Cutscene - ?",
+        "Identification": "Skullkid With Flute, OoT, Link Mask, Majora's Mask"
+    },
+    {
+        "ID": 330,
+        "FileName": "En_Slime",
+        "Object": 362,
+        "Translation": "",
+        "Identification": "Chuchu"
+    },
+    {
+        "ID": 331,
+        "FileName": "En_Pr",
+        "Object": 363,
+        "Translation": "Pirahna",
+        "Identification": "Desbreko"
+    },
+    {
+        "ID": 332,
+        "FileName": "Obj_Toudai",
+        "Object": 365,
+        "Translation": "Lighthouse",
+        "Identification": "Clock Tower Spotlight"
+    },
+    {
+        "ID": 333,
+        "FileName": "Obj_Entotu",
+        "Object": 365,
+        "Translation": "Stovepipe",
+        "Identification": "Chimney Expelling Smoke"
+    },
+    {
+        "ID": 334,
+        "FileName": "Obj_Bell",
+        "Object": 364,
+        "Translation": "",
+        "Identification": "Stock Pot Inn Bell"
+    },
+    {
+        "ID": 335,
+        "FileName": "En_Syateki_Okuta",
+        "Object": 5,
+        "Translation": "Shooting Gallery - Octorok",
+        "Identification": "Shooting Gallery - Octorok"
+    },
+    {
+        "ID": 336,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 337,
+        "FileName": "Obj_Shutter",
+        "Object": 365,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 338,
+        "FileName": "Dm_Zl",
+        "Object": 331,
+        "Translation": "Cutscene - Zelda",
+        "Identification": "Song of Time Cutscene - Child Zelda"
+    },
+    {
+        "ID": 339,
+        "FileName": "En_Elfgrp",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 340,
+        "FileName": "Dm_Tsg",
+        "Object": 415,
+        "Translation": "Cutscene - ?",
+        "Identification": "Tatl Left Behind Cutscene - Deku Door/Spotlights"
+    },
+    {
+        "ID": 341,
+        "FileName": "En_Baguo",
+        "Object": 369,
+        "Translation": "",
+        "Identification": "Nejiron"
+    },
+    {
+        "ID": 342,
+        "FileName": "Obj_Vspinyroll",
+        "Object": 358,
+        "Translation": "Vertical Spiny Roll",
+        "Identification": "Vertically-Oriented Rotating Spiked Log"
+    },
+    {
+        "ID": 343,
+        "FileName": "Obj_Smork",
+        "Object": 365,
+        "Translation": "Smoke",
+        "Identification": "Romani Ranch - Chimney Smoke Plume"
+    },
+    {
+        "ID": 344,
+        "FileName": "En_Test2",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 345,
+        "FileName": "En_Test3",
+        "Object": 28,
+        "Translation": "",
+        "Identification": "Kafei"
+    },
+    {
+        "ID": 346,
+        "FileName": "En_Test4",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Three-Day Timer"
+    },
+    {
+        "ID": 347,
+        "FileName": "En_Bat",
+        "Object": 370,
+        "Translation": "",
+        "Identification": "Bad Bat"
+    },
+    {
+        "ID": 348,
+        "FileName": "En_Sekihi",
+        "Object": 1,
+        "Translation": "Stone Monument",
+        "Identification": ""
+    },
+    {
+        "ID": 349,
+        "FileName": "En_Wiz",
+        "Object": 376,
+        "Translation": "Wizzrobe",
+        "Identification": "Wizzrobe"
+    },
+    {
+        "ID": 350,
+        "FileName": "En_Wiz_Brock",
+        "Object": 376,
+        "Translation": "Wizzrobe - Block",
+        "Identification": "Wizzrobe - Warp Platform"
+    },
+    {
+        "ID": 351,
+        "FileName": "En_Wiz_Fire",
+        "Object": 376,
+        "Translation": "",
+        "Identification": "Wizzrobe - Fire Attack"
+    },
+    {
+        "ID": 352,
+        "FileName": "Eff_Change",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Camera Focuses on Link"
+    },
+    {
+        "ID": 353,
+        "FileName": "Dm_Statue",
+        "Object": 620,
+        "Translation": "Cutscene - Statue",
+        "Identification": "Elegy of Emptiness - Beam of Light When Creating Statue"
+    },
+    {
+        "ID": 354,
+        "FileName": "Obj_Fireshield",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Switch-Deactivated Circle of Flames Surrounding Platforms"
+    },
+    {
+        "ID": 355,
+        "FileName": "Bg_Ladder",
+        "Object": 377,
+        "Translation": "",
+        "Identification": "Ladder"
+    },
+    {
+        "ID": 356,
+        "FileName": "En_Mkk",
+        "Object": 378,
+        "Translation": "Makkurokurosuke",
+        "Identification": "Black Boe"
+    },
+    {
+        "ID": 357,
+        "FileName": "Demo_Getitem",
+        "Object": 1,
+        "Translation": "Get Item",
+        "Identification": ""
+    },
+    {
+        "ID": 358,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 359,
+        "FileName": "En_Dnb",
+        "Object": 393,
+        "Translation": "Deku Scrub Ball",
+        "Identification": "Deku Nut Projectile"
+    },
+    {
+        "ID": 360,
+        "FileName": "En_Dnh",
+        "Object": 548,
+        "Translation": "Deku ?",
+        "Identification": "Blue Target Spot Saying Koume's Boat Cruise Is Closed"
+    },
+    {
+        "ID": 361,
+        "FileName": "En_Dnk",
+        "Object": 1,
+        "Translation": "Deku ?",
+        "Identification": ""
+    },
+    {
+        "ID": 362,
+        "FileName": "En_Dnq",
+        "Object": 395,
+        "Translation": "Deku ?",
+        "Identification": "Deku King"
+    },
+    {
+        "ID": 363,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 364,
+        "FileName": "Bg_Keikoku_Saku",
+        "Object": 382,
+        "Translation": "Canyon - Fence",
+        "Identification": ""
+    },
+    {
+        "ID": 365,
+        "FileName": "Obj_Hugebombiwa",
+        "Object": 298,
+        "Translation": "Huge Bombable Rock",
+        "Identification": "Boulder Blocking Goron Racetrack"
+    },
+    {
+        "ID": 366,
+        "FileName": "En_Firefly2",
+        "Object": 11,
+        "Translation": "Firefly 2",
+        "Identification": "Yellow Target Spot (object_En_Firefly)"
+    },
+    {
+        "ID": 367,
+        "FileName": "En_Rat",
+        "Object": 385,
+        "Translation": "",
+        "Identification": "Real Bombchu"
+    },
+    {
+        "ID": 368,
+        "FileName": "En_Water_Effect",
+        "Object": 386,
+        "Translation": "",
+        "Identification": "Water Dripping on Ground"
+    },
+    {
+        "ID": 369,
+        "FileName": "En_Kusa2",
+        "Object": 2,
+        "Translation": "Grass 2",
+        "Identification": ""
+    },
+    {
+        "ID": 370,
+        "FileName": "Bg_Spout_Fire",
+        "Object": 339,
+        "Translation": "",
+        "Identification": "Proximity-Activated Firewall"
+    },
+    {
+        "ID": 371,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 372,
+        "FileName": "Bg_Dblue_Movebg",
+        "Object": 388,
+        "Translation": "",
+        "Identification": "Great Bay Temple Gears"
+    },
+    {
+        "ID": 373,
+        "FileName": "En_Dy_Extra",
+        "Object": 8,
+        "Translation": "Great Fairy - Extra",
+        "Identification": "Fairy Grants Power Cutscenes - Spiral Beam of Light"
+    },
+    {
+        "ID": 374,
+        "FileName": "En_Bal",
+        "Object": 389,
+        "Translation": "Balloon?",
+        "Identification": "Tingle With Balloon"
+    },
+    {
+        "ID": 375,
+        "FileName": "En_Ginko_Man",
+        "Object": 227,
+        "Translation": "Bank - Man",
+        "Identification": "Bank Teller, Sakon, Twin Jugglers"
+    },
+    {
+        "ID": 376,
+        "FileName": "En_Warp_Uzu",
+        "Object": 390,
+        "Translation": "Warp - Whirlpool?",
+        "Identification": "Pirates' Fortress - Telescope on Tripod"
+    },
+    {
+        "ID": 377,
+        "FileName": "Obj_Driftice",
+        "Object": 391,
+        "Translation": "",
+        "Identification": "Ice Platform That Floats in Water"
+    },
+    {
+        "ID": 378,
+        "FileName": "En_Look_Nuts",
+        "Object": 309,
+        "Translation": "Lookout - Deku Scrub",
+        "Identification": "Deku Palace - Patrolling Deku Guard"
+    },
+    {
+        "ID": 379,
+        "FileName": "En_Mushi2",
+        "Object": 1,
+        "Translation": "Insect 2",
+        "Identification": ""
+    },
+    {
+        "ID": 380,
+        "FileName": "En_Fall",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 381,
+        "FileName": "En_Mm3",
+        "Object": 263,
+        "Translation": "Marathon Man 3",
+        "Identification": "Counting Game Postman"
+    },
+    {
+        "ID": 382,
+        "FileName": "Bg_Crace_Movebg",
+        "Object": 394,
+        "Translation": "",
+        "Identification": "Strange Wooden/Metal Texture"
+    },
+    {
+        "ID": 383,
+        "FileName": "En_Dno",
+        "Object": 499,
+        "Translation": "Deku ?",
+        "Identification": "Deku Butler"
+    },
+    {
+        "ID": 384,
+        "FileName": "En_Pr2",
+        "Object": 363,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 385,
+        "FileName": "En_Prz",
+        "Object": 363,
+        "Translation": "",
+        "Identification": "Skullfish - Defeated"
+    },
+    {
+        "ID": 386,
+        "FileName": "En_Jso2",
+        "Object": 341,
+        "Translation": "",
+        "Identification": "Link Turns & Walks Away on Approach"
+    },
+    {
+        "ID": 387,
+        "FileName": "Obj_Etcetera",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Pink & Green Deku Flower"
+    },
+    {
+        "ID": 388,
+        "FileName": "En_Egol",
+        "Object": 397,
+        "Translation": "Eyegore",
+        "Identification": "Eyegore"
+    },
+    {
+        "ID": 389,
+        "FileName": "Obj_Mine",
+        "Object": 187,
+        "Translation": "",
+        "Identification": "Exploding Metal Spike Trap"
+    },
+    {
+        "ID": 390,
+        "FileName": "Obj_Purify",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 391,
+        "FileName": "En_Tru",
+        "Object": 398,
+        "Translation": "Twinrova Ume",
+        "Identification": "Koume on Broom"
+    },
+    {
+        "ID": 392,
+        "FileName": "En_Trt",
+        "Object": 399,
+        "Translation": "Twinrova Take",
+        "Identification": "Kotake"
+    },
+    {
+        "ID": 393,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 394,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 395,
+        "FileName": "En_Test5",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 396,
+        "FileName": "En_Test6",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 397,
+        "FileName": "En_Az",
+        "Object": 408,
+        "Translation": "",
+        "Identification": "Beaver Bros. Big Brother"
+    },
+    {
+        "ID": 398,
+        "FileName": "En_Estone",
+        "Object": 397,
+        "Translation": "",
+        "Identification": "Rubble Blasted by Eyegore"
+    },
+    {
+        "ID": 399,
+        "FileName": "Bg_Hakugin_Post",
+        "Object": 400,
+        "Translation": "Snow - Post",
+        "Identification": "Snowhead Temple - Central Pillar"
+    },
+    {
+        "ID": 400,
+        "FileName": "Dm_Opstage",
+        "Object": 361,
+        "Translation": "Cutscene - Opening Stage",
+        "Identification": "Opening Cutscene - Grass in Lost Woods"
+    },
+    {
+        "ID": 401,
+        "FileName": "Dm_Stk",
+        "Object": 402,
+        "Translation": "Cutscene - Skullkid",
+        "Identification": "Skullkid With Flute, OoT, Link Mask, Majora's Mask"
+    },
+    {
+        "ID": 402,
+        "FileName": "Dm_Char00",
+        "Object": 456,
+        "Translation": "Cutscene - Character 00",
+        "Identification": "No Textures, No Display Lists to Render"
+    },
+    {
+        "ID": 403,
+        "FileName": "Dm_Char01",
+        "Object": 418,
+        "Translation": "Cutscene - Character 01",
+        "Identification": "Cutscene - Woodfall Temple Rises From the Mire"
+    },
+    {
+        "ID": 404,
+        "FileName": "Dm_Char02",
+        "Object": 446,
+        "Translation": "Cutscene - Character 02",
+        "Identification": "Clock Tower Roof Cutscene - OoT & Majora's Mask"
+    },
+    {
+        "ID": 405,
+        "FileName": "Dm_Char03",
+        "Object": 419,
+        "Translation": "Cutscene - Character 03",
+        "Identification": "Cutscene - Happy Mask Salesman"
+    },
+    {
+        "ID": 406,
+        "FileName": "Dm_Char04",
+        "Object": 1,
+        "Translation": "Cutscene - Character 04",
+        "Identification": ""
+    },
+    {
+        "ID": 407,
+        "FileName": "Dm_Char05",
+        "Object": 531,
+        "Translation": "Cutscene - Character 05",
+        "Identification": "Healing Pamela's Father Cutscene - Gibdo Mask"
+    },
+    {
+        "ID": 408,
+        "FileName": "Dm_Char06",
+        "Object": 486,
+        "Translation": "Cutscene - Character 06",
+        "Identification": "Mountain Village Unfreezes Cutscene - Mountain"
+    },
+    {
+        "ID": 409,
+        "FileName": "Dm_Char07",
+        "Object": 530,
+        "Translation": "Cutscene - Character 07",
+        "Identification": "Ending Cutscene - Indigo-Go's Milk Bar Stage"
+    },
+    {
+        "ID": 410,
+        "FileName": "Dm_Char08",
+        "Object": 553,
+        "Translation": "Cutscene - Character 08",
+        "Identification": "Turtle Island Cutscene - Turtle"
+    },
+    {
+        "ID": 411,
+        "FileName": "Dm_Char09",
+        "Object": 491,
+        "Translation": "Cutscene - Character 09",
+        "Identification": "Beehive Cutscene - Giant Bee"
+    },
+    {
+        "ID": 412,
+        "FileName": "Obj_Tokeidai",
+        "Object": 396,
+        "Translation": "Clocktower",
+        "Identification": "Clock Tower & Light Beam"
+    },
+    {
+        "ID": 413,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 414,
+        "FileName": "En_Mnk",
+        "Object": 405,
+        "Translation": "Monkey",
+        "Identification": "Monkey"
+    },
+    {
+        "ID": 415,
+        "FileName": "En_Egblock",
+        "Object": 397,
+        "Translation": "Eyegore Block",
+        "Identification": ""
+    },
+    {
+        "ID": 416,
+        "FileName": "En_Guard_Nuts",
+        "Object": 309,
+        "Translation": "Guard - Deku",
+        "Identification": "Deku Palace - Entrance Guard"
+    },
+    {
+        "ID": 417,
+        "FileName": "Bg_Hakugin_Bombwall",
+        "Object": 400,
+        "Translation": "Snow - Bombable Wall",
+        "Identification": "Snowhead Temple - Bombable Wall"
+    },
+    {
+        "ID": 418,
+        "FileName": "Obj_Tokei_Tobira",
+        "Object": 407,
+        "Translation": "Clock - Gate",
+        "Identification": "Clock Tower - Swinging Doors"
+    },
+    {
+        "ID": 419,
+        "FileName": "Bg_Hakugin_Elvpole",
+        "Object": 400,
+        "Translation": "Snow - Elevate Pole",
+        "Identification": "Snowhead Temple - Punchable Central Pole Inserts"
+    },
+    {
+        "ID": 420,
+        "FileName": "En_Ma4",
+        "Object": 183,
+        "Translation": "Malon 4",
+        "Identification": "Romani"
+    },
+    {
+        "ID": 421,
+        "FileName": "En_Twig",
+        "Object": 409,
+        "Translation": "",
+        "Identification": "Beaver Dam Twig Texture & Lifesaver Ring"
+    },
+    {
+        "ID": 422,
+        "FileName": "En_Po_Fusen",
+        "Object": 411,
+        "Translation": "Poe - Balloon",
+        "Identification": "Romani Ranch - Poe Balloon"
+    },
+    {
+        "ID": 423,
+        "FileName": "En_Door_Etc",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 424,
+        "FileName": "En_Bigokuta",
+        "Object": 414,
+        "Translation": "Big Octo",
+        "Identification": "Big Octo"
+    },
+    {
+        "ID": 425,
+        "FileName": "Bg_Icefloe",
+        "Object": 487,
+        "Translation": "",
+        "Identification": "Ice Platform Created by Ice Arrow"
+    },
+    {
+        "ID": 426,
+        "FileName": "Obj_Ocarinalift",
+        "Object": 355,
+        "Translation": "Ocarina Elevator",
+        "Identification": "Elevator With Triforce Texture"
+    },
+    {
+        "ID": 427,
+        "FileName": "En_Time_Tag",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 428,
+        "FileName": "Bg_Open_Shutter",
+        "Object": 415,
+        "Translation": "",
+        "Identification": "Tatl Left Behind Cutscene - Wooden Deku Door"
+    },
+    {
+        "ID": 429,
+        "FileName": "Bg_Open_Spot",
+        "Object": 415,
+        "Translation": "",
+        "Identification": "Taunted by Skullkid Cutscene - Spotlights"
+    },
+    {
+        "ID": 430,
+        "FileName": "Bg_Fu_Kaiten",
+        "Object": 416,
+        "Translation": "Windmill - Rotating",
+        "Identification": "Honey & Darling's Shop - Rotating Platform"
+    },
+    {
+        "ID": 431,
+        "FileName": "Obj_Aqua",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Water Poured Out of Bottle"
+    },
+    {
+        "ID": 432,
+        "FileName": "En_Elforg",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Stray Fairy"
+    },
+    {
+        "ID": 433,
+        "FileName": "En_Elfbub",
+        "Object": 14,
+        "Translation": "Elf - Bubble",
+        "Identification": "Stray Fairy in Bubble"
+    },
+    {
+        "ID": 434,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 435,
+        "FileName": "En_Fu_Mato",
+        "Object": 417,
+        "Translation": "Windmill - Target",
+        "Identification": "Honey & Darling's Shop - Target"
+    },
+    {
+        "ID": 436,
+        "FileName": "En_Fu_Kago",
+        "Object": 417,
+        "Translation": "Windmill - Basket",
+        "Identification": "Honey & Darling's Shop - Basket"
+    },
+    {
+        "ID": 437,
+        "FileName": "En_Osn",
+        "Object": 419,
+        "Translation": "",
+        "Identification": "Happy Mask Salesman"
+    },
+    {
+        "ID": 438,
+        "FileName": "Bg_Ctower_Gear",
+        "Object": 136,
+        "Translation": "Clock Tower - Gear",
+        "Identification": "Clock Tower - Rotating Wooden Cog"
+    },
+    {
+        "ID": 439,
+        "FileName": "En_Trt2",
+        "Object": 399,
+        "Translation": "Twinrova Take 2",
+        "Identification": "Kotake on Broom"
+    },
+    {
+        "ID": 440,
+        "FileName": "Obj_Tokei_Step",
+        "Object": 420,
+        "Translation": "Clock - Step",
+        "Identification": "Door to Top of Clock Tower"
+    },
+    {
+        "ID": 441,
+        "FileName": "Bg_Lotus",
+        "Object": 421,
+        "Translation": "",
+        "Identification": "Lilypad"
+    },
+    {
+        "ID": 442,
+        "FileName": "En_Kame",
+        "Object": 422,
+        "Translation": "Turtle",
+        "Identification": "Snapper"
+    },
+    {
+        "ID": 443,
+        "FileName": "Obj_Takaraya_Wall",
+        "Object": 436,
+        "Translation": "Treasure Chest Shop - Wall",
+        "Identification": "Treasure Chest Game - Proximity-Activated White Wall"
+    },
+    {
+        "ID": 444,
+        "FileName": "Bg_Fu_Mizu",
+        "Object": 416,
+        "Translation": "Windmill - Water",
+        "Identification": ""
+    },
+    {
+        "ID": 445,
+        "FileName": "En_Sellnuts",
+        "Object": 485,
+        "Translation": "Deku Seller",
+        "Identification": "Business Scrub Carrying Bags"
+    },
+    {
+        "ID": 446,
+        "FileName": "Bg_Dkjail_Ivy",
+        "Object": 423,
+        "Translation": "Deku Jail - Ivy",
+        "Identification": "Ivy in Deku Jail"
+    },
+    {
+        "ID": 447,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 448,
+        "FileName": "Obj_Visiblock",
+        "Object": 424,
+        "Translation": "",
+        "Identification": "Invisible Blue Platforms Seen With Lens of Truth"
+    },
+    {
+        "ID": 449,
+        "FileName": "En_Takaraya",
+        "Object": 297,
+        "Translation": "Treasure Chest Shop",
+        "Identification": "Treasure Chest Game - Employee"
+    },
+    {
+        "ID": 450,
+        "FileName": "En_Tsn",
+        "Object": 425,
+        "Translation": "Fisherman",
+        "Identification": "Great Bay - Fisherman"
+    },
+    {
+        "ID": 451,
+        "FileName": "En_Ds2n",
+        "Object": 426,
+        "Translation": "Drug Store 2 Owner",
+        "Identification": ""
+    },
+    {
+        "ID": 452,
+        "FileName": "En_Fsn",
+        "Object": 427,
+        "Translation": "Suspicious Shop Owner",
+        "Identification": "Curiosity Shop - Owner"
+    },
+    {
+        "ID": 453,
+        "FileName": "En_Shn",
+        "Object": 428,
+        "Translation": "Shooting Gallery Owner",
+        "Identification": "Swamp Tourist Center - Guide"
+    },
+    {
+        "ID": 454,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 455,
+        "FileName": "En_Stop_heishi",
+        "Object": 438,
+        "Translation": "Stop - Soldier",
+        "Identification": "Clock Town - Gate-Blocking Soldier"
+    },
+    {
+        "ID": 456,
+        "FileName": "Obj_Bigicicle",
+        "Object": 429,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 457,
+        "FileName": "En_Lift_Nuts",
+        "Object": 485,
+        "Translation": "Elevator - Deku",
+        "Identification": "Deku Scrub Playground - Employee"
+    },
+    {
+        "ID": 458,
+        "FileName": "En_Tk",
+        "Object": 431,
+        "Translation": "",
+        "Identification": "Dampé"
+    },
+    {
+        "ID": 459,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 460,
+        "FileName": "Bg_Market_Step",
+        "Object": 432,
+        "Translation": "",
+        "Identification": "West Clocktown - Stairs"
+    },
+    {
+        "ID": 461,
+        "FileName": "Obj_Lupygamelift",
+        "Object": 355,
+        "Translation": "Rupee Game Elevator",
+        "Identification": "Deku Scrub Playground - Rupee Elevator"
+    },
+    {
+        "ID": 462,
+        "FileName": "En_Test7",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 463,
+        "FileName": "Obj_Lightblock",
+        "Object": 435,
+        "Translation": "",
+        "Identification": "Block That Dissolves in Sunlight"
+    },
+    {
+        "ID": 464,
+        "FileName": "Mir_Ray2",
+        "Object": 135,
+        "Translation": "Mirror - Ray 2",
+        "Identification": "Mirror Shield Face & Light Ray"
+    },
+    {
+        "ID": 465,
+        "FileName": "En_Wdhand",
+        "Object": 437,
+        "Translation": "",
+        "Identification": "Dexihand"
+    },
+    {
+        "ID": 466,
+        "FileName": "En_Gamelupy",
+        "Object": 1,
+        "Translation": "Game Rupee",
+        "Identification": "Deku Scrub Playground - Large Green Rupee"
+    },
+    {
+        "ID": 467,
+        "FileName": "Bg_Danpei_Movebg",
+        "Object": 1,
+        "Translation": "Dampé - Move Background",
+        "Identification": ""
+    },
+    {
+        "ID": 468,
+        "FileName": "En_Snowwd",
+        "Object": 439,
+        "Translation": "Snow Wood",
+        "Identification": "Snow-Covered Tree"
+    },
+    {
+        "ID": 469,
+        "FileName": "En_Pm",
+        "Object": 263,
+        "Translation": "Postman",
+        "Identification": "Postman Delivering Letters"
+    },
+    {
+        "ID": 470,
+        "FileName": "En_Gakufu",
+        "Object": 1,
+        "Translation": "Sheet Music",
+        "Identification": "Termina Field - 2D Song Buttons Appearing on Wall"
+    },
+    {
+        "ID": 471,
+        "FileName": "Elf_Msg4",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 472,
+        "FileName": "Elf_Msg5",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 473,
+        "FileName": "En_Col_Man",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 474,
+        "FileName": "En_Talk_Gibud",
+        "Object": 117,
+        "Translation": "Talk - Gibdo",
+        "Identification": "Gibdo Requesting Blue Potion"
+    },
+    {
+        "ID": 475,
+        "FileName": "En_Giant",
+        "Object": 440,
+        "Translation": "",
+        "Identification": "Giant"
+    },
+    {
+        "ID": 476,
+        "FileName": "Obj_Snowball",
+        "Object": 239,
+        "Translation": "",
+        "Identification": "Large Snowball"
+    },
+    {
+        "ID": 477,
+        "FileName": "Boss_Hakugin",
+        "Object": 443,
+        "Translation": "Boss - Snow",
+        "Identification": "Goht"
+    },
+    {
+        "ID": 478,
+        "FileName": "En_Gb2",
+        "Object": 324,
+        "Translation": "Ghost Buyer 2",
+        "Identification": "Spirit House - Owner"
+    },
+    {
+        "ID": 479,
+        "FileName": "En_Onpuman",
+        "Object": 1,
+        "Translation": "Music Man",
+        "Identification": ""
+    },
+    {
+        "ID": 480,
+        "FileName": "Bg_Tobira01",
+        "Object": 447,
+        "Translation": "Gate 01",
+        "Identification": "Gate to Goron Shrine"
+    },
+    {
+        "ID": 481,
+        "FileName": "En_Tag_Obj",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 482,
+        "FileName": "Obj_Dhouse",
+        "Object": 449,
+        "Translation": "Dampé's House",
+        "Identification": "Dampé's House Facade"
+    },
+    {
+        "ID": 483,
+        "FileName": "Obj_Hakaisi",
+        "Object": 450,
+        "Translation": "Gravestone",
+        "Identification": "Gravestone"
+    },
+    {
+        "ID": 484,
+        "FileName": "Bg_Hakugin_Switch",
+        "Object": 455,
+        "Translation": "Snow - Switch",
+        "Identification": "Goron Link Switch"
+    },
+    {
+        "ID": 485,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 486,
+        "FileName": "En_Snowman",
+        "Object": 452,
+        "Translation": "",
+        "Identification": "Eeno"
+    },
+    {
+        "ID": 487,
+        "FileName": "TG_Sw",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 488,
+        "FileName": "En_Po_Sisters",
+        "Object": 453,
+        "Translation": "Poe - Sisters",
+        "Identification": "Poe Sisters"
+    },
+    {
+        "ID": 489,
+        "FileName": "En_Pp",
+        "Object": 454,
+        "Translation": "",
+        "Identification": "Hiploop"
+    },
+    {
+        "ID": 490,
+        "FileName": "En_Hakurock",
+        "Object": 443,
+        "Translation": "",
+        "Identification": "Rocks Kicked Up by Goht"
+    },
+    {
+        "ID": 491,
+        "FileName": "En_Hanabi",
+        "Object": 1,
+        "Translation": "Fireworks",
+        "Identification": ""
+    },
+    {
+        "ID": 492,
+        "FileName": "Obj_Dowsing",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 493,
+        "FileName": "Obj_Wind",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 494,
+        "FileName": "En_Racedog",
+        "Object": 306,
+        "Translation": "",
+        "Identification": "Racetrack Dog (Arrow Over Head)"
+    },
+    {
+        "ID": 495,
+        "FileName": "En_Kendo_Js",
+        "Object": 271,
+        "Translation": "Kendo - Carpet Seller",
+        "Identification": "Swordsman"
+    },
+    {
+        "ID": 496,
+        "FileName": "Bg_Botihasira",
+        "Object": 457,
+        "Translation": "Graveyard Bridge",
+        "Identification": "Captain Keeta Race - Gatepost"
+    },
+    {
+        "ID": 497,
+        "FileName": "En_Fish2",
+        "Object": 471,
+        "Translation": "",
+        "Identification": "Marine Research Lab Fish"
+    },
+    {
+        "ID": 498,
+        "FileName": "En_Pst",
+        "Object": 459,
+        "Translation": "",
+        "Identification": "Postbox"
+    },
+    {
+        "ID": 499,
+        "FileName": "En_Poh",
+        "Object": 451,
+        "Translation": "Poe",
+        "Identification": "Poe"
+    },
+    {
+        "ID": 500,
+        "FileName": "Obj_Spidertent",
+        "Object": 461,
+        "Translation": "",
+        "Identification": "Tent-Shaped Spider Web"
+    },
+    {
+        "ID": 501,
+        "FileName": "En_Zoraegg",
+        "Object": 462,
+        "Translation": "",
+        "Identification": "Zora Egg"
+    },
+    {
+        "ID": 502,
+        "FileName": "En_Kbt",
+        "Object": 463,
+        "Translation": "",
+        "Identification": "Zubora"
+    },
+    {
+        "ID": 503,
+        "FileName": "En_Gg",
+        "Object": 464,
+        "Translation": "Goron Ghost",
+        "Identification": "Darmani's Ghost"
+    },
+    {
+        "ID": 504,
+        "FileName": "En_Maruta",
+        "Object": 465,
+        "Translation": "Log",
+        "Identification": "Swordsman's School - Practice Log"
+    },
+    {
+        "ID": 505,
+        "FileName": "Obj_Snowball2",
+        "Object": 239,
+        "Translation": "",
+        "Identification": "Small Snowball"
+    },
+    {
+        "ID": 506,
+        "FileName": "En_Gg2",
+        "Object": 464,
+        "Translation": "Goron Ghost 2",
+        "Identification": "Darmani's Ghost"
+    },
+    {
+        "ID": 507,
+        "FileName": "Obj_Ghaka",
+        "Object": 466,
+        "Translation": "Goron Grave",
+        "Identification": "Darmani's Gravestone"
+    },
+    {
+        "ID": 508,
+        "FileName": "En_Dnp",
+        "Object": 468,
+        "Translation": "Deku Princess",
+        "Identification": "Deku Princess"
+    },
+    {
+        "ID": 509,
+        "FileName": "En_Dai",
+        "Object": 469,
+        "Translation": "Big",
+        "Identification": "Biggoron"
+    },
+    {
+        "ID": 510,
+        "FileName": "Bg_Goron_Oyu",
+        "Object": 467,
+        "Translation": "Goron - Hot Water",
+        "Identification": "Goron Hot Spring Water"
+    },
+    {
+        "ID": 511,
+        "FileName": "En_Kgy",
+        "Object": 470,
+        "Translation": "Blacksmith",
+        "Identification": "Gabora"
+    },
+    {
+        "ID": 512,
+        "FileName": "En_Invadepoh",
+        "Object": 1,
+        "Translation": "Invading Poe",
+        "Identification": ""
+    },
+    {
+        "ID": 513,
+        "FileName": "En_Gk",
+        "Object": 479,
+        "Translation": "Goron Kid",
+        "Identification": "Goron Elder's Son"
+    },
+    {
+        "ID": 514,
+        "FileName": "En_An",
+        "Object": 226,
+        "Translation": "Anju",
+        "Identification": "Anju"
+    },
+    {
+        "ID": 515,
+        "FileName": "unset",
+        "Object": 0,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 516,
+        "FileName": "En_Bee",
+        "Object": 491,
+        "Translation": "",
+        "Identification": "Giant Bee"
+    },
+    {
+        "ID": 517,
+        "FileName": "En_Ot",
+        "Object": 492,
+        "Translation": "",
+        "Identification": "Seahorse"
+    },
+    {
+        "ID": 518,
+        "FileName": "En_Dragon",
+        "Object": 493,
+        "Translation": "",
+        "Identification": "Deep Python"
+    },
+    {
+        "ID": 519,
+        "FileName": "Obj_Dora",
+        "Object": 494,
+        "Translation": "Gong",
+        "Identification": "Swordsman's School - Gong"
+    },
+    {
+        "ID": 520,
+        "FileName": "En_Bigpo",
+        "Object": 497,
+        "Translation": "Big Poe",
+        "Identification": "Big Poe"
+    },
+    {
+        "ID": 521,
+        "FileName": "Obj_Kendo_Kanban",
+        "Object": 494,
+        "Translation": "Kendo - Sign",
+        "Identification": "Swordsman's School - Cuttable Board"
+    },
+    {
+        "ID": 522,
+        "FileName": "Obj_Hariko",
+        "Object": 498,
+        "Translation": "Paper Maché",
+        "Identification": "Little Cow Statue Head"
+    },
+    {
+        "ID": 523,
+        "FileName": "En_Sth",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 524,
+        "FileName": "Bg_Sinkai_Kabe",
+        "Object": 500,
+        "Translation": "Deep Sea - Wall",
+        "Identification": "No Textures, No Display Lists to Render"
+    },
+    {
+        "ID": 525,
+        "FileName": "Bg_Haka_Curtain",
+        "Object": 480,
+        "Translation": "Grave - Curtain",
+        "Identification": "Curtain That Lifts to Reveal Flat's Tomb"
+    },
+    {
+        "ID": 526,
+        "FileName": "Bg_Kin2_Bombwall",
+        "Object": 501,
+        "Translation": "Gold Skulltula 2 - Bombable Wall",
+        "Identification": "Ocean Spider House - Bombable Wall"
+    },
+    {
+        "ID": 527,
+        "FileName": "Bg_Kin2_Fence",
+        "Object": 501,
+        "Translation": "Gold Skulltula 2 - Fence",
+        "Identification": "Ocean Spider House - Fireplace Grate"
+    },
+    {
+        "ID": 528,
+        "FileName": "Bg_Kin2_Picture",
+        "Object": 501,
+        "Translation": "Gold Skulltula 2 - Picture",
+        "Identification": "Ocean Spider House - Skullkid Painting"
+    },
+    {
+        "ID": 529,
+        "FileName": "Bg_Kin2_Shelf",
+        "Object": 501,
+        "Translation": "Gold Skulltula 2 - Shelf",
+        "Identification": "Ocean Spider House - Drawers"
+    },
+    {
+        "ID": 530,
+        "FileName": "En_Rail_Skb",
+        "Object": 322,
+        "Translation": "? - Stalchild",
+        "Identification": "Ikana Graveyard - Circle of Stalchildren"
+    },
+    {
+        "ID": 531,
+        "FileName": "En_Jg",
+        "Object": 504,
+        "Translation": "Grandpa Goron",
+        "Identification": "Goron Elder"
+    },
+    {
+        "ID": 532,
+        "FileName": "En_Tru_Mt",
+        "Object": 398,
+        "Translation": "Twinrova Ume - Target",
+        "Identification": "Koume's Target Game - Koume on Broom"
+    },
+    {
+        "ID": 533,
+        "FileName": "Obj_Um",
+        "Object": 508,
+        "Translation": "",
+        "Identification": "Cremia's Cart"
+    },
+    {
+        "ID": 534,
+        "FileName": "En_Neo_Reeba",
+        "Object": 513,
+        "Translation": "Neo - Leever",
+        "Identification": "Leever"
+    },
+    {
+        "ID": 535,
+        "FileName": "Bg_Mbar_Chair",
+        "Object": 514,
+        "Translation": "Milk Bar - Chair",
+        "Identification": "Milk Bar - Chair"
+    },
+    {
+        "ID": 536,
+        "FileName": "Bg_Ikana_Block",
+        "Object": 3,
+        "Translation": "",
+        "Identification": "Stone Tower Temple - Rotating Room Pushblock"
+    },
+    {
+        "ID": 537,
+        "FileName": "Bg_Ikana_Mirror",
+        "Object": 515,
+        "Translation": "",
+        "Identification": "Stone Tower Temple - Mirror"
+    },
+    {
+        "ID": 538,
+        "FileName": "Bg_Ikana_Rotaryroom",
+        "Object": 515,
+        "Translation": "",
+        "Identification": "Stone Tower Temple - Rotating Room"
+    },
+    {
+        "ID": 539,
+        "FileName": "Bg_Dblue_Balance",
+        "Object": 388,
+        "Translation": "Dull Blue - Balance",
+        "Identification": "Great Bay Temple - See-Saw"
+    },
+    {
+        "ID": 540,
+        "FileName": "Bg_Dblue_Waterfall",
+        "Object": 388,
+        "Translation": "Dull Blue - Waterfall",
+        "Identification": "Great Bay Temple - Freezable Geyser"
+    },
+    {
+        "ID": 541,
+        "FileName": "En_Kaizoku",
+        "Object": 516,
+        "Translation": "Pirate",
+        "Identification": "Gerudo Pirate"
+    },
+    {
+        "ID": 542,
+        "FileName": "En_Ge2",
+        "Object": 302,
+        "Translation": "Gerudo 2",
+        "Identification": "Patrolling Pirate Guard"
+    },
+    {
+        "ID": 543,
+        "FileName": "En_Ma_Yts",
+        "Object": 183,
+        "Translation": "Malon - ?",
+        "Identification": "Romani"
+    },
+    {
+        "ID": 544,
+        "FileName": "En_Ma_Yto",
+        "Object": 167,
+        "Translation": "Malon - ?",
+        "Identification": "Cremia"
+    },
+    {
+        "ID": 545,
+        "FileName": "Obj_Tokei_Turret",
+        "Object": 517,
+        "Translation": "Clock - Turret",
+        "Identification": "South Clock Town - Flags & Carnival Platform"
+    },
+    {
+        "ID": 546,
+        "FileName": "Bg_Dblue_Elevator",
+        "Object": 388,
+        "Translation": "Dull Blue - Elevator",
+        "Identification": "Great Bay Temple - Elevator"
+    },
+    {
+        "ID": 547,
+        "FileName": "Obj_Warpstone",
+        "Object": 368,
+        "Translation": "",
+        "Identification": "Owl Statue"
+    },
+    {
+        "ID": 548,
+        "FileName": "En_Zog",
+        "Object": 518,
+        "Translation": "Zora Guitarist",
+        "Identification": "Mikau"
+    },
+    {
+        "ID": 549,
+        "FileName": "Obj_Rotlift",
+        "Object": 519,
+        "Translation": "Rotating Elevator",
+        "Identification": "Deku Moon Dungeon - Spiked Rotating Platforms"
+    },
+    {
+        "ID": 550,
+        "FileName": "Obj_Jg_Gakki",
+        "Object": 504,
+        "Translation": "Grandpa Goron - Musical Instrument",
+        "Identification": "Goron Elder - Drum"
+    },
+    {
+        "ID": 551,
+        "FileName": "Bg_Inibs_Movebg",
+        "Object": 524,
+        "Translation": "Ancient Castle Boss - Moving BG",
+        "Identification": "Twinmold Arena"
+    },
+    {
+        "ID": 552,
+        "FileName": "En_Zot",
+        "Object": 208,
+        "Translation": "",
+        "Identification": "Great Bay - Zora With Directions to Zora Hall"
+    },
+    {
+        "ID": 553,
+        "FileName": "Obj_Tree",
+        "Object": 525,
+        "Translation": "",
+        "Identification": "North Clock Town - Tree"
+    },
+    {
+        "ID": 554,
+        "FileName": "Obj_Y2lift",
+        "Object": 526,
+        "Translation": "",
+        "Identification": "Elevator?"
+    },
+    {
+        "ID": 555,
+        "FileName": "Obj_Y2shutter",
+        "Object": 526,
+        "Translation": "",
+        "Identification": "Pirate's Fortress - Interior Door"
+    },
+    {
+        "ID": 556,
+        "FileName": "Obj_Boat",
+        "Object": 526,
+        "Translation": "",
+        "Identification": "Pirate Boat"
+    },
+    {
+        "ID": 557,
+        "FileName": "Obj_Taru",
+        "Object": 592,
+        "Translation": "Barrel",
+        "Identification": "Wooden Barrel"
+    },
+    {
+        "ID": 558,
+        "FileName": "Obj_Hunsui",
+        "Object": 573,
+        "Translation": "Water Fountain",
+        "Identification": "Switch-Activated Geyser"
+    },
+    {
+        "ID": 559,
+        "FileName": "En_Jc_Mato",
+        "Object": 398,
+        "Translation": "? - Target",
+        "Identification": "Koume's Target Game - Target"
+    },
+    {
+        "ID": 560,
+        "FileName": "Mir_Ray3",
+        "Object": 135,
+        "Translation": "Mirror - Ray 3",
+        "Identification": "Mirror Shield Face & Light Ray"
+    },
+    {
+        "ID": 561,
+        "FileName": "En_Zob",
+        "Object": 529,
+        "Translation": "Zora Bassist",
+        "Identification": "Japas"
+    },
+    {
+        "ID": 562,
+        "FileName": "Elf_Msg6",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 563,
+        "FileName": "Obj_Nozoki",
+        "Object": 1,
+        "Translation": "Peer",
+        "Identification": ""
+    },
+    {
+        "ID": 564,
+        "FileName": "En_Toto",
+        "Object": 570,
+        "Translation": "",
+        "Identification": "Toto"
+    },
+    {
+        "ID": 565,
+        "FileName": "En_Railgibud",
+        "Object": 117,
+        "Translation": "? Gibdo",
+        "Identification": "Music Box House - Patrolling Gibdos"
+    },
+    {
+        "ID": 566,
+        "FileName": "En_Baba",
+        "Object": 223,
+        "Translation": "Old Lady",
+        "Identification": "Bomb Shop Lady"
+    },
+    {
+        "ID": 567,
+        "FileName": "En_Suttari",
+        "Object": 227,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 568,
+        "FileName": "En_Zod",
+        "Object": 534,
+        "Translation": "Zora Drummer",
+        "Identification": "Tijo"
+    },
+    {
+        "ID": 569,
+        "FileName": "En_Kujiya",
+        "Object": 611,
+        "Translation": "Lottery Shop",
+        "Identification": "Clock Town - Lottery Shop"
+    },
+    {
+        "ID": 570,
+        "FileName": "En_Geg",
+        "Object": 161,
+        "Translation": "Gero Goron",
+        "Identification": "Goron With Don Gero's Mask"
+    },
+    {
+        "ID": 571,
+        "FileName": "Obj_Kinoko",
+        "Object": 1,
+        "Translation": "Mushroom",
+        "Identification": ""
+    },
+    {
+        "ID": 572,
+        "FileName": "Obj_Yasi",
+        "Object": 536,
+        "Translation": "Palm Tree",
+        "Identification": "Palm Tree"
+    },
+    {
+        "ID": 573,
+        "FileName": "En_Tanron1",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 574,
+        "FileName": "En_Tanron2",
+        "Object": 349,
+        "Translation": "",
+        "Identification": "Bubbles Surrounding Wart?"
+    },
+    {
+        "ID": 575,
+        "FileName": "En_Tanron3",
+        "Object": 348,
+        "Translation": "",
+        "Identification": "Fish Surrounding Gyorg?"
+    },
+    {
+        "ID": 576,
+        "FileName": "Obj_Chan",
+        "Object": 542,
+        "Translation": "",
+        "Identification": "Goron Village - Chandelier"
+    },
+    {
+        "ID": 577,
+        "FileName": "En_Zos",
+        "Object": 544,
+        "Translation": "Zora Synthesizer",
+        "Identification": "Evan"
+    },
+    {
+        "ID": 578,
+        "FileName": "En_S_Goro",
+        "Object": 161,
+        "Translation": "? - Goron",
+        "Identification": "Goron Complaining About Baby Crying"
+    },
+    {
+        "ID": 579,
+        "FileName": "En_Nb",
+        "Object": 4,
+        "Translation": "",
+        "Identification": "Anju's Grandma"
+    },
+    {
+        "ID": 580,
+        "FileName": "En_Ja",
+        "Object": 227,
+        "Translation": "",
+        "Identification": "Juggler"
+    },
+    {
+        "ID": 581,
+        "FileName": "Bg_F40_Block",
+        "Object": 92,
+        "Translation": "",
+        "Identification": "Stone Tower Temple - Movable Monkey-Faced Blocks"
+    },
+    {
+        "ID": 582,
+        "FileName": "Bg_F40_Switch",
+        "Object": 546,
+        "Translation": "",
+        "Identification": "Elegy of Emptiness Switch"
+    },
+    {
+        "ID": 583,
+        "FileName": "En_Po_Composer",
+        "Object": 93,
+        "Translation": "Poe Composer",
+        "Identification": "Poe Composers"
+    },
+    {
+        "ID": 584,
+        "FileName": "En_Guruguru",
+        "Object": 255,
+        "Translation": "",
+        "Identification": "Guru-Guru"
+    },
+    {
+        "ID": 585,
+        "FileName": "Oceff_Wipe5",
+        "Object": 1,
+        "Translation": "Ocarina Effect - Wipe 5",
+        "Identification": ""
+    },
+    {
+        "ID": 586,
+        "FileName": "En_Stone_heishi",
+        "Object": 438,
+        "Translation": "Stone - Soldier",
+        "Identification": "Shiro"
+    },
+    {
+        "ID": 587,
+        "FileName": "Oceff_Wipe6",
+        "Object": 1,
+        "Translation": "Ocarina Effect - Wipe 6",
+        "Identification": ""
+    },
+    {
+        "ID": 588,
+        "FileName": "En_Scopenuts",
+        "Object": 485,
+        "Translation": "Telescope Deku",
+        "Identification": "Astral Observatory - Business Scrub in Telescope"
+    },
+    {
+        "ID": 589,
+        "FileName": "En_Scopecrow",
+        "Object": 6,
+        "Translation": "Telescope Crow",
+        "Identification": "Astral Observatory - Guay in Telescope"
+    },
+    {
+        "ID": 590,
+        "FileName": "Oceff_Wipe7",
+        "Object": 1,
+        "Translation": "Ocarina Effect - Wipe 7",
+        "Identification": ""
+    },
+    {
+        "ID": 591,
+        "FileName": "Eff_Kamejima_Wave",
+        "Object": 553,
+        "Translation": "Effect - Turtle Island - Wave",
+        "Identification": "Wave Created by Turtle Awakening"
+    },
+    {
+        "ID": 592,
+        "FileName": "En_Hg",
+        "Object": 554,
+        "Translation": "",
+        "Identification": "Pamela's Father"
+    },
+    {
+        "ID": 593,
+        "FileName": "En_Hgo",
+        "Object": 554,
+        "Translation": "",
+        "Identification": "Pamela's Father As a Gibdo"
+    },
+    {
+        "ID": 594,
+        "FileName": "En_Zov",
+        "Object": 555,
+        "Translation": "Zora Vocalist",
+        "Identification": "Lulu"
+    },
+    {
+        "ID": 595,
+        "FileName": "En_Ah",
+        "Object": 7,
+        "Translation": "",
+        "Identification": "Madame Dotour"
+    },
+    {
+        "ID": 596,
+        "FileName": "Obj_Hgdoor",
+        "Object": 556,
+        "Translation": "",
+        "Identification": "Music Box House - Closet Door"
+    },
+    {
+        "ID": 597,
+        "FileName": "Bg_Ikana_Bombwall",
+        "Object": 515,
+        "Translation": "Ikana - Bombable Wall",
+        "Identification": "Stone Tower Temple - Bombable Tan Floor Tile"
+    },
+    {
+        "ID": 598,
+        "FileName": "Bg_Ikana_Ray",
+        "Object": 515,
+        "Translation": "",
+        "Identification": "Stone Tower Temple - Light Rays"
+    },
+    {
+        "ID": 599,
+        "FileName": "Bg_Ikana_Shutter",
+        "Object": 515,
+        "Translation": "",
+        "Identification": "Stone Tower Temple - Door"
+    },
+    {
+        "ID": 600,
+        "FileName": "Bg_Haka_Bombwall",
+        "Object": 480,
+        "Translation": "Grave - Bombable Wall",
+        "Identification": "Beneath the Grave - Bombable Wall"
+    },
+    {
+        "ID": 601,
+        "FileName": "Bg_Haka_Tomb",
+        "Object": 480,
+        "Translation": "Grave - Tomb",
+        "Identification": "Flat's Tomb"
+    },
+    {
+        "ID": 602,
+        "FileName": "En_Sc_Ruppe",
+        "Object": 1,
+        "Translation": "? - Rupee",
+        "Identification": "Large Rotating Green Rupee"
+    },
+    {
+        "ID": 603,
+        "FileName": "Bg_Iknv_Doukutu",
+        "Object": 567,
+        "Translation": "Ikana Valley - Cave",
+        "Identification": "Sharp's Cave"
+    },
+    {
+        "ID": 604,
+        "FileName": "Bg_Iknv_Obj",
+        "Object": 567,
+        "Translation": "Ikana Valley - Object",
+        "Identification": "Music Box House - Waterwheel"
+    },
+    {
+        "ID": 605,
+        "FileName": "En_Pamera",
+        "Object": 568,
+        "Translation": "Pamela",
+        "Identification": "Pamela"
+    },
+    {
+        "ID": 606,
+        "FileName": "Obj_HsStump",
+        "Object": 569,
+        "Translation": "Hookshot Stump",
+        "Identification": "Ikana Canyon - Hookshotable Tree"
+    },
+    {
+        "ID": 607,
+        "FileName": "En_Hidden_Nuts",
+        "Object": 299,
+        "Translation": "Hidden - Deku Scrub",
+        "Identification": "Swamp Spider House - Sleeping Deku Scrub"
+    },
+    {
+        "ID": 608,
+        "FileName": "En_Zow",
+        "Object": 208,
+        "Translation": "Zora Water",
+        "Identification": "Great Bay - Zora Complaining About Water"
+    },
+    {
+        "ID": 609,
+        "FileName": "En_Talk",
+        "Object": 1,
+        "Translation": "",
+        "Identification": "Green Target Spot (Indigo-Go's Poster)"
+    },
+    {
+        "ID": 610,
+        "FileName": "En_Al",
+        "Object": 13,
+        "Translation": "Aroma",
+        "Identification": "Madame Aroma"
+    },
+    {
+        "ID": 611,
+        "FileName": "En_Tab",
+        "Object": 19,
+        "Translation": "Talon B",
+        "Identification": "Mr. Barten"
+    },
+    {
+        "ID": 612,
+        "FileName": "En_Nimotsu",
+        "Object": 227,
+        "Translation": "Luggage",
+        "Identification": "Bomb Shop Bag Stolen by Sakon"
+    },
+    {
+        "ID": 613,
+        "FileName": "En_Hit_Tag",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 614,
+        "FileName": "En_Ruppecrow",
+        "Object": 6,
+        "Translation": "Rupee Crow",
+        "Identification": "Guay Circling Clock Town"
+    },
+    {
+        "ID": 615,
+        "FileName": "En_Tanron4",
+        "Object": 575,
+        "Translation": "",
+        "Identification": "Flock of Seagulls"
+    },
+    {
+        "ID": 616,
+        "FileName": "En_Tanron5",
+        "Object": 347,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 617,
+        "FileName": "En_Tanron6",
+        "Object": 576,
+        "Translation": "",
+        "Identification": "Flock of Giant Bees"
+    },
+    {
+        "ID": 618,
+        "FileName": "En_Daiku2",
+        "Object": 241,
+        "Translation": "Carpenter 2",
+        "Identification": "Milk Road - Carpenter Hacking at Boulder"
+    },
+    {
+        "ID": 619,
+        "FileName": "En_Muto",
+        "Object": 240,
+        "Translation": "Mutoh",
+        "Identification": "Mutoh"
+    },
+    {
+        "ID": 620,
+        "FileName": "En_Baisen",
+        "Object": 583,
+        "Translation": "Vissen",
+        "Identification": "Vissen"
+    },
+    {
+        "ID": 621,
+        "FileName": "En_Heishi",
+        "Object": 438,
+        "Translation": "Soldier",
+        "Identification": ""
+    },
+    {
+        "ID": 622,
+        "FileName": "En_Demo_heishi",
+        "Object": 438,
+        "Translation": "Soldier",
+        "Identification": "Title Sequence - Soldier"
+    },
+    {
+        "ID": 623,
+        "FileName": "En_Dt",
+        "Object": 577,
+        "Translation": "Dotour",
+        "Identification": "Mayor Dotour"
+    },
+    {
+        "ID": 624,
+        "FileName": "En_Cha",
+        "Object": 579,
+        "Translation": "",
+        "Identification": "Laundry Pool - Sign With Bell"
+    },
+    {
+        "ID": 625,
+        "FileName": "Obj_Dinner",
+        "Object": 580,
+        "Translation": "",
+        "Identification": "Cremia & Romani's 6pm Dinner"
+    },
+    {
+        "ID": 626,
+        "FileName": "Eff_Lastday",
+        "Object": 582,
+        "Translation": "",
+        "Identification": "Moon Crashing Into Clocktown Effects"
+    },
+    {
+        "ID": 627,
+        "FileName": "Bg_Ikana_Dharma",
+        "Object": 515,
+        "Translation": "",
+        "Identification": "Ikana Castle - Punchable Pillar Segments"
+    },
+    {
+        "ID": 628,
+        "FileName": "En_Akindonuts",
+        "Object": 485,
+        "Translation": "Deku Salesman",
+        "Identification": "Woodfall - Business Scrub"
+    },
+    {
+        "ID": 629,
+        "FileName": "Eff_Stk",
+        "Object": 446,
+        "Translation": "",
+        "Identification": "Skullkid Screams to Call Moon Down - Effects"
+    },
+    {
+        "ID": 630,
+        "FileName": "En_Ig",
+        "Object": 469,
+        "Translation": "",
+        "Identification": "Link the Goron"
+    },
+    {
+        "ID": 631,
+        "FileName": "En_Rg",
+        "Object": 161,
+        "Translation": "",
+        "Identification": "Medigoron"
+    },
+    {
+        "ID": 632,
+        "FileName": "En_Osk",
+        "Object": 585,
+        "Translation": "",
+        "Identification": "Captain Keeta"
+    },
+    {
+        "ID": 633,
+        "FileName": "En_Sth2",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 634,
+        "FileName": "En_Yb",
+        "Object": 586,
+        "Translation": "",
+        "Identification": "Kamaro"
+    },
+    {
+        "ID": 635,
+        "FileName": "En_Rz",
+        "Object": 587,
+        "Translation": "Rosa",
+        "Identification": "Rosa Sister"
+    },
+    {
+        "ID": 636,
+        "FileName": "En_Scopecoin",
+        "Object": 1,
+        "Translation": "Telescope Coin",
+        "Identification": ""
+    },
+    {
+        "ID": 637,
+        "FileName": "En_Bjt",
+        "Object": 591,
+        "Translation": "",
+        "Identification": "Hand in Toilet"
+    },
+    {
+        "ID": 638,
+        "FileName": "En_Bomjima",
+        "Object": 272,
+        "Translation": "Bomber Jim A",
+        "Identification": "Bombers - Jim"
+    },
+    {
+        "ID": 639,
+        "FileName": "En_Bomjimb",
+        "Object": 272,
+        "Translation": "Bomber Jim B",
+        "Identification": "Bombers - Jim"
+    },
+    {
+        "ID": 640,
+        "FileName": "En_Bombers",
+        "Object": 272,
+        "Translation": "",
+        "Identification": "Bombers - Blue-Hatted Bomber"
+    },
+    {
+        "ID": 641,
+        "FileName": "En_Bombers2",
+        "Object": 272,
+        "Translation": "",
+        "Identification": "Bombers - Hideout Guard"
+    },
+    {
+        "ID": 642,
+        "FileName": "En_Bombal",
+        "Object": 640,
+        "Translation": "",
+        "Identification": "Bombers - Majora Balloon"
+    },
+    {
+        "ID": 643,
+        "FileName": "Obj_Moon_Stone",
+        "Object": 433,
+        "Translation": "",
+        "Identification": "Moon's Tear"
+    },
+    {
+        "ID": 644,
+        "FileName": "Obj_Mu_Pict",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 645,
+        "FileName": "Bg_Ikninside",
+        "Object": 566,
+        "Translation": "Ikana Inside",
+        "Identification": "Various Ikana Objects"
+    },
+    {
+        "ID": 646,
+        "FileName": "Eff_Zoraband",
+        "Object": 597,
+        "Translation": "",
+        "Identification": "Blue Spotlight Effect"
+    },
+    {
+        "ID": 647,
+        "FileName": "Obj_Kepn_Koya",
+        "Object": 598,
+        "Translation": "? - Shed",
+        "Identification": "Gorman Bros. Buildings"
+    },
+    {
+        "ID": 648,
+        "FileName": "Obj_Usiyane",
+        "Object": 599,
+        "Translation": "Cow Barn Roof",
+        "Identification": "Roof of Cow Barn"
+    },
+    {
+        "ID": 649,
+        "FileName": "En_Nnh",
+        "Object": 603,
+        "Translation": "",
+        "Identification": "Twisted Corpse of Deku Butler's Son"
+    },
+    {
+        "ID": 650,
+        "FileName": "Obj_Kzsaku",
+        "Object": 608,
+        "Translation": "? - Fence",
+        "Identification": ""
+    },
+    {
+        "ID": 651,
+        "FileName": "Obj_Milk_Bin",
+        "Object": 609,
+        "Translation": "Milk - Bottle",
+        "Identification": "Cart Delivery Bottle of Chateau Romani"
+    },
+    {
+        "ID": 652,
+        "FileName": "En_Kitan",
+        "Object": 612,
+        "Translation": "Keaton",
+        "Identification": "Keaton"
+    },
+    {
+        "ID": 653,
+        "FileName": "Bg_Astr_Bombwall",
+        "Object": 615,
+        "Translation": "Astral Observatory - Bombable Wall",
+        "Identification": "Astral Observatory - Bombable Wall"
+    },
+    {
+        "ID": 654,
+        "FileName": "Bg_Iknin_Susceil",
+        "Object": 566,
+        "Translation": "Ikana Inside - Suspended Ceiling",
+        "Identification": "Stone Tower Temple - Hot Checkered Ceiling"
+    },
+    {
+        "ID": 655,
+        "FileName": "En_Bsb",
+        "Object": 616,
+        "Translation": "",
+        "Identification": "Captain Keeta"
+    },
+    {
+        "ID": 656,
+        "FileName": "En_Recepgirl",
+        "Object": 297,
+        "Translation": "Receptionist Girl",
+        "Identification": "Receptionist"
+    },
+    {
+        "ID": 657,
+        "FileName": "En_Thiefbird",
+        "Object": 34,
+        "Translation": "",
+        "Identification": "Takkuri"
+    },
+    {
+        "ID": 658,
+        "FileName": "En_Jgame_Tsn",
+        "Object": 425,
+        "Translation": "Jumping Game - Fisherman",
+        "Identification": "Fisherman's Jumping Game - Fisherman"
+    },
+    {
+        "ID": 659,
+        "FileName": "Obj_Jgame_Light",
+        "Object": 128,
+        "Translation": "Jumping Game - Light",
+        "Identification": "Fisherman's Jumping Game - Torch"
+    },
+    {
+        "ID": 660,
+        "FileName": "Obj_Yado",
+        "Object": 622,
+        "Translation": "Inn",
+        "Identification": "Stockpot Inn - 2nd Floor Window"
+    },
+    {
+        "ID": 661,
+        "FileName": "Demo_Syoten",
+        "Object": 623,
+        "Translation": "Cutscene - God",
+        "Identification": "Unknown"
+    },
+    {
+        "ID": 662,
+        "FileName": "Demo_Moonend",
+        "Object": 624,
+        "Translation": "Moon End",
+        "Identification": "Ending Cutscene - Moon Gets Tossed Back Into Sky"
+    },
+    {
+        "ID": 663,
+        "FileName": "Bg_Lbfshot",
+        "Object": 639,
+        "Translation": "",
+        "Identification": "Colourful Hookshot Target Pillar"
+    },
+    {
+        "ID": 664,
+        "FileName": "Bg_Last_Bwall",
+        "Object": 564,
+        "Translation": "Last Dungeon - Bombable Wall",
+        "Identification": "Link Moon Dungeon - Bombable, Climbable Wall"
+    },
+    {
+        "ID": 665,
+        "FileName": "En_And",
+        "Object": 21,
+        "Translation": "Anju Cutscene",
+        "Identification": "Anju in Wedding Dress"
+    },
+    {
+        "ID": 666,
+        "FileName": "En_Invadepoh_Demo",
+        "Object": 1,
+        "Translation": "Invader Poe - Cutscene",
+        "Identification": ""
+    },
+    {
+        "ID": 667,
+        "FileName": "Obj_Danpeilift",
+        "Object": 627,
+        "Translation": "Dampé Elevator",
+        "Identification": ""
+    },
+    {
+        "ID": 668,
+        "FileName": "En_Fall2",
+        "Object": 617,
+        "Translation": "",
+        "Identification": "Falling Moon"
+    },
+    {
+        "ID": 669,
+        "FileName": "Dm_Al",
+        "Object": 13,
+        "Translation": "Cutscene - Aroma",
+        "Identification": "Ending Cutscene - Madame Aroma at Wedding"
+    },
+    {
+        "ID": 670,
+        "FileName": "Dm_An",
+        "Object": 226,
+        "Translation": "Cutscene - Anju",
+        "Identification": "Blue Target Spot"
+    },
+    {
+        "ID": 671,
+        "FileName": "Dm_Ah",
+        "Object": 7,
+        "Translation": "Cutscene - Anju's Mother",
+        "Identification": "Ending Cutscene - Anju's Mother at Wedding"
+    },
+    {
+        "ID": 672,
+        "FileName": "Dm_Nb",
+        "Object": 4,
+        "Translation": "Cutscene - ?",
+        "Identification": "Ending Cutscene - Anju's Grandmother at Wedding"
+    },
+    {
+        "ID": 673,
+        "FileName": "En_Drs",
+        "Object": 24,
+        "Translation": "Dress",
+        "Identification": "Wedding Dress Mannequin"
+    },
+    {
+        "ID": 674,
+        "FileName": "En_Ending_Hero",
+        "Object": 577,
+        "Translation": "",
+        "Identification": "Ending Cutscene - Mayor Dotour at Wedding"
+    },
+    {
+        "ID": 675,
+        "FileName": "Dm_Bal",
+        "Object": 389,
+        "Translation": "Cutscene - Balloon",
+        "Identification": "Ending Cutscene - Tingle at Wedding"
+    },
+    {
+        "ID": 676,
+        "FileName": "En_Paper",
+        "Object": 389,
+        "Translation": "",
+        "Identification": "Ending Cutscene - Confetti at Wedding"
+    },
+    {
+        "ID": 677,
+        "FileName": "En_Hint_Skb",
+        "Object": 322,
+        "Translation": "Hint - Stalchild",
+        "Identification": "Stalchild - Gives Hints"
+    },
+    {
+        "ID": 678,
+        "FileName": "Dm_Tag",
+        "Object": 1,
+        "Translation": "Cutscene - Tag",
+        "Identification": ""
+    },
+    {
+        "ID": 679,
+        "FileName": "En_Bh",
+        "Object": 634,
+        "Translation": "",
+        "Identification": "Moon - Brown Bird"
+    },
+    {
+        "ID": 680,
+        "FileName": "En_Ending_Hero2",
+        "Object": 583,
+        "Translation": "",
+        "Identification": "Ending Cutscene - Vissen at Wedding"
+    },
+    {
+        "ID": 681,
+        "FileName": "En_Ending_Hero3",
+        "Object": 240,
+        "Translation": "",
+        "Identification": "Ending Cutscene - Mutoh at Wedding"
+    },
+    {
+        "ID": 682,
+        "FileName": "En_Ending_Hero4",
+        "Object": 438,
+        "Translation": "",
+        "Identification": "Ending Cutscene - Soldier Cheering Guruguru"
+    },
+    {
+        "ID": 683,
+        "FileName": "En_Ending_Hero5",
+        "Object": 241,
+        "Translation": "",
+        "Identification": "Ending Cutscene - Carpenter Watching Indigo-Go's"
+    },
+    {
+        "ID": 684,
+        "FileName": "En_Ending_Hero6",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 685,
+        "FileName": "Dm_Gm",
+        "Object": 226,
+        "Translation": "Cutscene - Gorman",
+        "Identification": "Blue Target Spot"
+    },
+    {
+        "ID": 686,
+        "FileName": "Obj_Swprize",
+        "Object": 1,
+        "Translation": "",
+        "Identification": ""
+    },
+    {
+        "ID": 687,
+        "FileName": "En_Invisible_Ruppe",
+        "Object": 1,
+        "Translation": "Invisible - Rupee",
+        "Identification": ""
+    },
+    {
+        "ID": 688,
+        "FileName": "Obj_Ending",
+        "Object": 641,
+        "Translation": "Ending",
+        "Identification": "Ending Cutscene - Stump With Skullkid's Doodle"
+    },
+    {
+        "ID": 689,
+        "FileName": "En_Rsn",
+        "Object": 0,
+        "Translation": "",
+        "Identification": "Ending Cutscene - Bomb Shop Owner"
+    }
+]

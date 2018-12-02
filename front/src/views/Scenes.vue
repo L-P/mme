@@ -17,6 +17,7 @@
         <tr
           v-for="scene, _, index in scenes"
           :key="index"
+          v-if="scene.VROMStart > 0"
         >
           <td>{{ scene.Name }}</td>
           <td>{{ scene.EntranceMessage }}</td>

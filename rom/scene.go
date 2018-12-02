@@ -3,6 +3,7 @@ package rom
 import (
 	"encoding/binary"
 	"io"
+	"strings"
 )
 
 // InternalSceneTableEntry is a single entry of the InternalSceneTable
@@ -52,8 +53,6 @@ func (s *Scene) load(r io.ReadSeeker, entry InternalSceneTableEntry) {
 	size := entry.VROMEnd - s.DataStartOffset
 	s.data = make([]byte, size, size)
 	binary.Read(r, binary.BigEndian, s.data)
-
-	s.loadRooms(r)
 }
 
 func (s *Scene) loadRooms(r io.ReadSeeker) {
@@ -62,7 +61,7 @@ func (s *Scene) loadRooms(r io.ReadSeeker) {
 		return
 	}
 
-	listOffset := s.RoomsSegmentOffset & 0xFFFFFF // ditch 0x02
+	listOffset := s.RoomsSegmentOffset & 0x00FFFFFF // ditch 0x02
 	r.Seek(int64(s.VROMStart+listOffset), io.SeekStart)
 
 	var start uint32
@@ -70,9 +69,10 @@ func (s *Scene) loadRooms(r io.ReadSeeker) {
 		binary.Read(r, binary.BigEndian, &start)
 
 		s.Rooms[i] = Room{
-			ID:        i,
-			VROMStart: start,
-			data:      make([]byte, 0),
+			ID:             i,
+			VROMStart:      start,
+			SceneName:      strings.Join([]string{s.Name, s.EntranceMessage}, " - "),
+			SceneVROMStart: s.VROMStart,
 		}
 	}
 

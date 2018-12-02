@@ -1,42 +1,25 @@
 import Vue from 'vue';
+import Buefy from 'buefy';
+import 'buefy/dist/buefy.css';
+
 import './plugins/axios';
-import App from './App.vue';
+import config from './config';
 import router from './router';
-import config from '@/config';
+import * as filters from './filters';
+
+import App from './App.vue';
 
 Vue.config.productionTip = false;
+
+Vue.use(Buefy);
 
 new Vue({
   router,
   render: h => h(App),
 }).$mount('#app');
 
-Vue.filter('maybeHex', (v, width) => {
-  if (typeof v === 'number') {
-    const hex = v.toString(16).toUpperCase().padStart(width, '0');
-    return `0x${hex}`;
-  }
-
-  return v;
-});
-
-Vue.filter('hex', (v, width) => {
-  const hex = v.toString(16).toUpperCase().padStart(width, '0');
-  return `0x${hex}`;
+Object.keys(filters.default).forEach((key) => {
+  Vue.filter(key, filters.default[key]);
 });
 
 Vue.filter('apiURI', v => `${config.API_URI}${v}`);
-
-Vue.filter('humanizeBytes', (v) => {
-  if (v === 0) {
-    return '0 B';
-  }
-
-  const units = ['B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'ZiB', 'YiB'];
-  const i = Math.min(units.length - 1, Math.floor(Math.log(v) / Math.log(1024)));
-  let rounded = v / (1024 ** i);
-  rounded = +rounded.toFixed(2);
-
-
-  return `${rounded} ${units[i]}`;
-});

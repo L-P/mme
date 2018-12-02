@@ -16,14 +16,31 @@
         <tr
           v-for="file, _, index in files"
           :key="index"
+          v-if="file.VROMStart > 0 || file.VROMEnd > 0"
         >
           <td>{{ file.Name }}</td>
-          <td>{{ file.Type }}</td>
+          <td><b-tag v-if="file.Type">{{ file.Type }}</b-tag></td>
           <td>{{ file.VROMStart | hex(8) }}</td>
           <td>{{ file.VROMEnd | hex(8) }}</td>
           <td>{{ file.VROMEnd - file.VROMStart | humanizeBytes }}</td>
           <td>
-            <a class="button" :href="'/api/files/' + file.VROMStart | apiURI">Download</a>
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="button" :href="'/api/files/' + file.VROMStart | apiURI">Download</a>
+              </p>
+              <p v-if="file.Type == 'scene'" class="control">
+                <RouterLink
+                  class="button is-primary"
+                  :to="{name: 'SceneDetail', params: {start: file.VROMStart}}"
+                >Details</RouterLink>
+              </p>
+              <p v-if="file.Type == 'room'" class="control">
+                <RouterLink
+                  class="button is-primary"
+                  :to="{name: 'RoomDetail', params: {start: file.VROMStart}}"
+                >Details</RouterLink>
+              </p>
+            </div>
           </td>
         </tr>
       </tbody>

@@ -1,7 +1,14 @@
+import ActorList from '@/components/ActorList.vue';
+
 export default {
+  components: {
+    ActorList,
+  },
+
   data() {
     return {
-      room: {},
+      room: {
+      },
     };
   },
 

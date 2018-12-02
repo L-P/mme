@@ -72,32 +72,24 @@ func (v *View) load(r io.ReadSeeker) error {
 		return err
 	}
 
-	if err := v.loadScenes(r); err != nil {
-		return err
-	}
-
 	if err := v.loadMessages(r); err != nil {
 		return err
 	}
 
-	v.mapSceneEntranceMessages()
+	if err := v.loadScenes(r); err != nil {
+		return err
+	}
+
+	if err := v.loadRoomData(r); err != nil {
+		return err
+	}
+
 	v.mapFileTypes()
 
 	return nil
 }
 
 // O(n²) deal with it
-func (v *View) mapSceneEntranceMessages() {
-	for k := range v.Scenes {
-		for _, msg := range v.Messages {
-			if v.Scenes[k].EntranceMessageID == msg.ID {
-				v.Scenes[k].EntranceMessage = msg.String
-			}
-		}
-	}
-}
-
-// I said deal with it
 func (v *View) mapFileTypes() {
 	mapped := 0
 
@@ -143,6 +135,23 @@ func (v *View) loadFiles(r io.ReadSeeker) error {
 	return nil
 }
 
+// loadRoomData sets the raw room data (without headers), this needs to be done
+// separately because we don't have the room size without looking at the file
+// table
+func (v *View) loadRoomData(r io.ReadSeeker) error {
+	for scene := range v.Scenes {
+		for room := range v.Scenes[scene].Rooms {
+			for _, file := range v.Files {
+				if file.VROMStart == v.Scenes[scene].Rooms[room].VROMStart {
+					v.Scenes[scene].Rooms[room].loadData(r, file.VROMEnd)
+				}
+			}
+		}
+	}
+
+	return nil
+}
+
 func (v *View) loadScenes(r io.ReadSeeker) error {
 	if len(v.Scenes) != len(v.rom.InternalSceneTable) {
 		return errors.New("len(v.scenes) != len (v.rom.InternalSceneTable")
@@ -150,6 +159,16 @@ func (v *View) loadScenes(r io.ReadSeeker) error {
 
 	for k, entry := range v.rom.InternalSceneTable {
 		v.Scenes[k].load(r, entry)
+
+		// loadRoomData needs the entrance ID to give a room it's proper name,
+		// do this first
+		for _, msg := range v.Messages {
+			if v.Scenes[k].EntranceMessageID == msg.ID {
+				v.Scenes[k].EntranceMessage = msg.String
+			}
+		}
+
+		v.Scenes[k].loadRooms(r)
 	}
 
 	log.Printf("Loaded %d Scenes", len(v.Scenes))
