@@ -25,6 +25,8 @@ type ActorEntry struct {
 
 	Position Vec3
 	Rotation Vec3
+
+	Description ActorDescription
 }
 
 func (a *ActorEntry) load(r io.Reader) {
@@ -35,6 +37,8 @@ func (a *ActorEntry) load(r io.Reader) {
 	a.loadYRotationAndSceneCommandIndex(r)              // 2 bytes
 	a.loadZRotationAndSpawnTimeFlags(r)                 // 2 bytes
 	binary.Read(r, binary.BigEndian, &a.Initialization) // 2 bytes
+
+	a.Description = ActorDescriptions[a.ID]
 }
 
 func (a *ActorEntry) loadXRotationAndSpawnTimeFlags(r io.Reader) {

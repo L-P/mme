@@ -30,4 +30,14 @@ export default {
 
     return `${rounded} ${units[i]}`;
   },
+
+  coalesce(a) {
+    for (let i = 0; i < a.length; i += 1) {
+      if (a[i]) {
+        return a[i];
+      }
+    }
+
+    return '';
+  },
 };
