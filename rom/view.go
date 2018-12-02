@@ -72,6 +72,10 @@ func (v *View) load(r io.ReadSeeker) error {
 		return err
 	}
 
+	if err := v.loadMessages(r); err != nil {
+		return err
+	}
+
 	if err := v.loadScenes(r); err != nil {
 		return err
 	}
@@ -80,28 +84,12 @@ func (v *View) load(r io.ReadSeeker) error {
 		return err
 	}
 
-	if err := v.loadMessages(r); err != nil {
-		return err
-	}
-
-	v.mapSceneEntranceMessages()
 	v.mapFileTypes()
 
 	return nil
 }
 
 // O(n²) deal with it
-func (v *View) mapSceneEntranceMessages() {
-	for k := range v.Scenes {
-		for _, msg := range v.Messages {
-			if v.Scenes[k].EntranceMessageID == msg.ID {
-				v.Scenes[k].EntranceMessage = msg.String
-			}
-		}
-	}
-}
-
-// I said deal with it
 func (v *View) mapFileTypes() {
 	mapped := 0
 
@@ -171,6 +159,16 @@ func (v *View) loadScenes(r io.ReadSeeker) error {
 
 	for k, entry := range v.rom.InternalSceneTable {
 		v.Scenes[k].load(r, entry)
+
+		// loadRoomData needs the entrance ID to give a room it's proper name,
+		// do this first
+		for _, msg := range v.Messages {
+			if v.Scenes[k].EntranceMessageID == msg.ID {
+				v.Scenes[k].EntranceMessage = msg.String
+			}
+		}
+
+		v.Scenes[k].loadRooms(r)
 	}
 
 	log.Printf("Loaded %d Scenes", len(v.Scenes))

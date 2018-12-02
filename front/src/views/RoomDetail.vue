@@ -5,7 +5,7 @@
       <div class="column">
         <h2 class="title">{{this.room.SceneName}} - room #{{this.room.ID}}</h2>
       </div>
-      <div class="column">
+      <div class="column is-one-fifth">
         <RouterLink
           class="button is-primary"
           :to="{name: 'SceneDetail', params: {start: room.SceneVROMStart}}"
