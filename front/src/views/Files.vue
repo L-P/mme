@@ -16,9 +16,10 @@
         <tr
           v-for="file, _, index in files"
           :key="index"
+          v-if="file.VROMStart > 0 || file.VROMEnd > 0"
         >
           <td>{{ file.Name }}</td>
-          <td>{{ file.Type }}</td>
+          <td><b-tag v-if="file.Type">{{ file.Type }}</b-tag></td>
           <td>{{ file.VROMStart | hex(8) }}</td>
           <td>{{ file.VROMEnd | hex(8) }}</td>
           <td>{{ file.VROMEnd - file.VROMStart | humanizeBytes }}</td>
