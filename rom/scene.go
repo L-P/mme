@@ -61,7 +61,7 @@ func (s *Scene) loadRooms(r io.ReadSeeker) {
 		return
 	}
 
-	listOffset := s.RoomsSegmentOffset & 0xFFFFFF // ditch 0x02
+	listOffset := s.RoomsSegmentOffset & 0x00FFFFFF // ditch 0x02
 	r.Seek(int64(s.VROMStart+listOffset), io.SeekStart)
 
 	var start uint32
@@ -73,7 +73,6 @@ func (s *Scene) loadRooms(r io.ReadSeeker) {
 			VROMStart:      start,
 			SceneName:      strings.Join([]string{s.Name, s.EntranceMessage}, " - "),
 			SceneVROMStart: s.VROMStart,
-			data:           make([]byte, 0),
 		}
 	}
 
