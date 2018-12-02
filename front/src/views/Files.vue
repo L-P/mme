@@ -23,7 +23,23 @@
           <td>{{ file.VROMEnd | hex(8) }}</td>
           <td>{{ file.VROMEnd - file.VROMStart | humanizeBytes }}</td>
           <td>
-            <a class="button" :href="'/api/files/' + file.VROMStart | apiURI">Download</a>
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="button" :href="'/api/files/' + file.VROMStart | apiURI">Download</a>
+              </p>
+              <p v-if="file.Type == 'scene'" class="control">
+                <RouterLink
+                  class="button is-primary"
+                  :to="{name: 'SceneDetail', params: {start: file.VROMStart}}"
+                >Details</RouterLink>
+              </p>
+              <p v-if="file.Type == 'room'" class="control">
+                <RouterLink
+                  class="button is-primary"
+                  :to="{name: 'RoomDetail', params: {start: file.VROMStart}}"
+                >Details</RouterLink>
+              </p>
+            </div>
           </td>
         </tr>
       </tbody>
