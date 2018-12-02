@@ -76,6 +76,10 @@ func (v *View) load(r io.ReadSeeker) error {
 		return err
 	}
 
+	if err := v.loadRoomData(r); err != nil {
+		return err
+	}
+
 	if err := v.loadMessages(r); err != nil {
 		return err
 	}
@@ -139,6 +143,23 @@ func (v *View) loadFiles(r io.ReadSeeker) error {
 	}
 
 	log.Printf("Loaded %d Files (%s)", len(v.Files), humanize.IBytes(uint64(size)))
+
+	return nil
+}
+
+// loadRoomData sets the raw room data (without headers), this needs to be done
+// separately because we don't have the room size without looking at the file
+// table
+func (v *View) loadRoomData(r io.ReadSeeker) error {
+	for scene := range v.Scenes {
+		for room := range v.Scenes[scene].Rooms {
+			for _, file := range v.Files {
+				if file.VROMStart == v.Scenes[scene].Rooms[room].VROMStart {
+					v.Scenes[scene].Rooms[room].loadData(r, file.VROMEnd)
+				}
+			}
+		}
+	}
 
 	return nil
 }

@@ -1,6 +1,7 @@
 package rom
 
 import (
+	"encoding/binary"
 	"io"
 )
 
@@ -8,8 +9,11 @@ import (
 type Room struct {
 	ID              byte
 	VROMStart       uint32
-	DataStartOffset uint32 // ROM offset to the Room data
+	DataStartOffset uint32 // VROM offset to the Room data
 	LocationHeader
+
+	SceneName      string
+	SceneVROMStart uint32 // VROM offset the the Scene this Room belongs to
 
 	data []byte
 }
@@ -20,10 +24,10 @@ func (r *Room) load(rs io.ReadSeeker) {
 	}
 
 	r.DataStartOffset = r.LocationHeader.load(rs, r.VROMStart)
+}
 
-	/*
-		size := entry.VROMEnd - s.DataStartOffset
-		s.data = make([]byte, size, size)
-		binary.Read(r, binary.BigEndian, s.data)
-	*/
+func (r *Room) loadData(rs io.ReadSeeker, end uint32) {
+	size := end - r.DataStartOffset
+	r.data = make([]byte, size, size)
+	binary.Read(rs, binary.BigEndian, r.data)
 }

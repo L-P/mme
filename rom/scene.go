@@ -70,9 +70,11 @@ func (s *Scene) loadRooms(r io.ReadSeeker) {
 		binary.Read(r, binary.BigEndian, &start)
 
 		s.Rooms[i] = Room{
-			ID:        i,
-			VROMStart: start,
-			data:      make([]byte, 0),
+			ID:             i,
+			VROMStart:      start,
+			SceneName:      s.Name,
+			SceneVROMStart: s.VROMStart,
+			data:           make([]byte, 0),
 		}
 	}
 
